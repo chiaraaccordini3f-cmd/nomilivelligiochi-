@@ -1,0 +1,1963 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>I nomi a livelli – versione per la classe | Play and Learn Italia</title>
+<meta name="robots" content="noindex,nofollow">
+<meta name="description" content="Dieci livelli di grammatica per la classe terza: nomi comuni e propri, generici e specifici, maschile e femminile, singolare e plurale, concreti e astratti, primitivi e derivati, alterati, composti, collettivi. Schemi iniziali e 50 giochi interattivi per LIM, PC e tablet.">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "I nomi a livelli",
+  "description": "Percorso a dieci livelli per la classe terza della scuola primaria: i nomi e le loro classificazioni (genere, numero, concreti e astratti, primitivi e derivati, alterati, composti, collettivi), con schemi teorici e 50 giochi interattivi.",
+  "url": "https://www.playandlearnitalia.com/app/i-nomi-a-livelli/",
+  "image": "https://playandlearnitalia.com/wp-content/uploads/2026/05/Logo-pal-lavagna.png",
+  "applicationCategory": "EducationalApplication",
+  "operatingSystem": "Any",
+  "inLanguage": "it",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Play and Learn Italia",
+    "url": "https://www.playandlearnitalia.com"
+  }
+}
+</script>
+<link rel="canonical" href="https://www.playandlearnitalia.com/app/i-nomi-a-livelli/">
+<link rel="icon" type="image/png" href="https://playandlearnitalia.com/wp-content/uploads/2026/05/Logo-pal-lavagna.png">
+<link rel="apple-touch-icon" href="https://playandlearnitalia.com/wp-content/uploads/2026/05/Logo-pal-lavagna.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Lato:wght@400;700;800;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --turchese:#209AAB;
+    --giallo:#D9B918;
+    --rosa:#E01760;
+    --arancio:#E7900C;
+    --verde:#6AB77D;
+    --blunotte:#1A2F4A;
+    --bianco:#FFFFFF;
+    --pal-bg:#FEF7EA;
+    --dot-color:rgba(255,255,255,0.65);
+  }
+  *{box-sizing:border-box;-webkit-tap-highlight-color:transparent;}
+  [hidden]{display:none !important;}
+  html,body{margin:0;padding:0;height:100%;}
+  body{
+    font-family:'Lato',sans-serif; color:var(--blunotte);
+    background-color:var(--pal-bg);
+    background-image:radial-gradient(var(--dot-color) 1.5px, transparent 1.5px);
+    background-size:22px 22px;
+    display:flex; flex-direction:column; height:100vh; height:100dvh; overflow:hidden;
+    padding-bottom:env(safe-area-inset-bottom); -webkit-text-size-adjust:100%;
+  }
+  button{font-family:inherit;touch-action:manipulation;color:inherit;}
+  :focus-visible{outline:4px solid var(--rosa);outline-offset:2px;}
+
+  /* ===== HEADER ===== */
+  .pal-header{ background:#FFFFFF; display:flex; align-items:center; min-height:64px; padding:0 12px; border-bottom:3px solid var(--giallo); box-shadow:0 3px 8px rgba(0,0,0,0.10); flex-shrink:0; z-index:20; }
+  .pal-logo-link{ text-decoration:none; display:flex; align-items:center; }
+  .pal-bus-wrap{ width:46px; height:46px; flex-shrink:0; filter:drop-shadow(0 2px 4px rgba(0,0,0,0.15)); display:flex; align-items:center; justify-content:center; font-size:34px; }
+  .pal-bus-wrap img{ width:100%; height:100%; object-fit:contain; display:block; }
+  .pal-divider{ width:2.5px; height:40px; background:#E0D0FF; margin:0 12px; border-radius:2px; flex-shrink:0; }
+  .pal-title-block{ flex:1; min-width:0; }
+  .pal-app-title{ margin:0; font-family:'Fredoka One',cursive; font-weight:400; font-size:20px; line-height:1.1; text-transform:uppercase; }
+  .home-seo-line{ font-size:12px; font-weight:700; color:#5b6b80; margin-top:2px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+  .pal-header-actions{ display:flex; gap:8px; flex-shrink:0; }
+  .help-btn,.fullscreen-btn,.schemi-btn{ width:42px; height:42px; border-radius:50%; border:3px solid var(--turchese); background:#fff; color:var(--turchese); font-weight:900; font-size:19px; cursor:pointer; }
+  .help-btn:active,.fullscreen-btn:active,.schemi-btn:active{ transform:scale(.94); }
+
+  .stage{ flex:1; min-height:0; overflow-y:auto; overflow-x:hidden; position:relative; }
+  .panel{ max-width:1080px; margin:0 auto; padding:14px 16px 24px; display:flex; flex-direction:column; gap:14px; }
+
+  .btn{ font-family:'Fredoka One',cursive; font-weight:400; text-transform:uppercase; border:none; border-radius:999px; padding:12px 24px; min-height:52px; font-size:17px; cursor:pointer; color:#fff; background:var(--turchese); box-shadow:0 4px 0 rgba(26,47,74,.25); transition:transform .08s; }
+  .btn:active{ transform:translateY(3px); box-shadow:0 1px 0 rgba(26,47,74,.25); }
+  .btn.rosa{ background:var(--rosa); } .btn.verde{ background:var(--verde); } .btn.arancio{ background:var(--arancio); }
+  .btn.giallo{ background:var(--giallo); color:var(--blunotte); }
+  .btn.ghost{ background:#fff; color:var(--turchese); border:3px solid var(--turchese); box-shadow:none; padding:8px 18px; min-height:48px; font-size:15px; }
+  .btn[disabled]{ opacity:.45; cursor:not-allowed; }
+
+  /* ===== HOME / LIVELLI ===== */
+  .hero{ display:flex; gap:16px; align-items:center; background:#fff; border:3px solid var(--giallo); border-radius:24px; padding:16px 20px; box-shadow:0 6px 0 rgba(217,185,24,.35); }
+  .hero-emo{ font-size:56px; line-height:1; }
+  .hero-t{ font-family:'Fredoka One',cursive; font-size:clamp(26px,4vw,40px); color:var(--rosa); line-height:1.05; text-transform:uppercase; }
+  .hero-s{ font-weight:800; font-size:clamp(15px,2vw,19px); margin-top:4px; text-transform:uppercase; }
+  .stars-row{ display:flex; align-items:center; gap:6px; font-family:'Fredoka One',cursive; font-size:20px; flex-wrap:wrap; }
+  .stars-row .st{ font-size:26px; filter:grayscale(1) opacity(.35); }
+  .stars-row .st.on{ filter:none; }
+  .stars-row .lbl{ margin-right:6px; }
+  .lvl-grid{ display:grid; grid-template-columns:repeat(auto-fit,minmax(290px,1fr)); gap:16px; }
+  .lvl-card{ position:relative; text-align:left; background:#fff; border:4px solid var(--c); border-radius:28px; padding:16px 16px 16px 92px; min-height:150px; cursor:pointer; box-shadow:0 7px 0 rgba(26,47,74,.14); display:flex; flex-direction:column; gap:6px; justify-content:center; }
+  .lvl-card:active{ transform:translateY(3px); box-shadow:0 2px 0 rgba(26,47,74,.14); }
+  .lvl-card .badge{ position:absolute; left:16px; top:50%; transform:translateY(-50%); width:62px; height:62px; border-radius:50%; background:var(--c); color:#fff; font-family:'Fredoka One',cursive; display:flex; flex-direction:column; align-items:center; justify-content:center; line-height:1; }
+  .lvl-card .badge small{ font-size:11px; letter-spacing:.5px; } .lvl-card .badge b{ font-size:30px; font-weight:400; }
+  .lvl-card .tt{ font-family:'Fredoka One',cursive; font-size:clamp(19px,2.4vw,24px); text-transform:uppercase; line-height:1.1; color:var(--c); }
+  .lvl-card .ss{ font-weight:800; font-size:14px; text-transform:uppercase; color:#4c5e75; }
+  .lvl-card .pg{ font-weight:900; font-size:15px; }
+  .lvl-card .emo{ position:absolute; right:14px; top:10px; font-size:30px; }
+  .lvl-card.locked{ filter:grayscale(1); opacity:.6; cursor:not-allowed; border-style:dashed; }
+  .lvl-card.next::after{ content:'TOCCA QUI'; position:absolute; right:12px; bottom:10px; background:var(--rosa); color:#fff; font-family:'Fredoka One',cursive; font-size:13px; padding:4px 12px; border-radius:999px; animation:pulse 1.4s ease-in-out infinite; }
+  @keyframes pulse{ 0%,100%{ transform:scale(1);} 50%{ transform:scale(1.08);} }
+
+  .grid{ display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px; }
+  .st-card{ position:relative; text-align:left; background:#fff; border:4px solid var(--c,var(--turchese)); border-radius:24px; padding:16px 16px 16px 84px; min-height:112px; cursor:pointer; box-shadow:0 6px 0 rgba(26,47,74,.14); color:var(--blunotte); }
+  .st-card:active{ transform:translateY(3px); box-shadow:0 2px 0 rgba(26,47,74,.14); }
+  .st-card .num{ position:absolute; left:12px; top:14px; width:58px; height:46px; border-radius:23px; background:var(--c,var(--turchese)); color:#fff; font-family:'Fredoka One',cursive; font-size:22px; display:flex; align-items:center; justify-content:center; }
+  .st-card .emo{ position:absolute; left:12px; bottom:10px; width:58px; text-align:center; font-size:26px; }
+  .st-card .tt{ font-family:'Fredoka One',cursive; font-size:21px; text-transform:uppercase; line-height:1.1; color:var(--c,var(--turchese)); }
+  .st-card .ss{ font-weight:800; font-size:14px; margin-top:6px; text-transform:uppercase; color:#4c5e75; }
+  .st-card .tick{ position:absolute; right:12px; top:10px; font-size:28px; }
+  .st-card.next::after{ content:'TOCCA QUI'; position:absolute; right:12px; bottom:10px; background:var(--rosa); color:#fff; font-family:'Fredoka One',cursive; font-size:13px; padding:4px 12px; border-radius:999px; animation:pulse 1.4s ease-in-out infinite; }
+  .st-card.scheme{ background:#FFF9E0; border-style:dashed; }
+  .lvl-done{ background:#DDF3E3; border:3px solid var(--verde); border-radius:18px; padding:10px 16px; font-family:'Fredoka One',cursive; font-size:clamp(18px,2.4vw,24px); text-transform:uppercase; text-align:center; }
+
+  /* ===== STAZIONI ===== */
+  .st-top{ display:flex; align-items:center; gap:12px; flex-wrap:wrap; }
+  .st-title{ font-family:'Fredoka One',cursive; font-size:clamp(20px,3vw,30px); text-transform:uppercase; display:flex; align-items:center; gap:10px; line-height:1.1; }
+  .st-num{ min-width:46px; height:40px; padding:0 10px; border-radius:20px; color:#fff; display:inline-flex; align-items:center; justify-content:center; font-size:20px; flex-shrink:0; }
+  .intro{ background:#fff; border-left:8px solid var(--turchese); border-radius:16px; padding:12px 16px; font-weight:800; font-size:clamp(16px,2vw,20px); line-height:1.4; }
+  .intro b{ color:var(--rosa); }
+  .hint{ background:#FFF6CC; border:3px dashed var(--giallo); border-radius:16px; padding:10px 14px; font-weight:800; font-size:clamp(15px,1.9vw,18px); }
+  .fb{ min-height:28px; font-weight:900; font-size:clamp(16px,2vw,20px); }
+  .fb.ok{ color:#2f8a4a; } .fb.no{ color:var(--rosa); } .fb.info{ color:var(--turchese); }
+  .actions{ display:flex; flex-wrap:wrap; gap:10px; align-items:center; }
+
+  .text-card{ background:#fff; border:4px solid var(--turchese); border-radius:24px; padding:18px 20px; line-height:1.9; }
+  .w{ display:inline-block; padding:0 6px; margin:2px 0; border-radius:10px; cursor:pointer; font-size:clamp(20px,2.7vw,30px); font-weight:700; border-bottom:5px solid transparent; user-select:none; }
+  .w:hover{ background:#EAF7F9; }
+  .w.sel{ background:#FFF3B8; border-bottom-color:var(--rosa); }
+  .w.good{ background:#DDF3E3; border-bottom-color:var(--verde); }
+  .w.bad{ background:#FFD9E5; border-bottom-color:var(--rosa); animation:shake .4s; }
+  .pn{ font-size:clamp(20px,2.7vw,30px); font-weight:700; }
+  @keyframes shake{ 0%,100%{transform:translateX(0);} 25%{transform:translateX(-7px);} 75%{transform:translateX(7px);} }
+  .shake{ animation:shake .4s; }
+
+  .pool{ display:flex; flex-wrap:wrap; gap:10px; background:#fff; border:3px solid #E7DFC8; border-radius:20px; padding:14px; min-height:84px; justify-content:center; }
+  .chip{ font-family:'Fredoka One',cursive; font-size:clamp(20px,2.4vw,26px); background:#fff; color:var(--blunotte); border:3px solid var(--blunotte); border-radius:16px; padding:8px 18px; min-height:52px; cursor:grab; touch-action:none; user-select:none; -webkit-user-select:none; box-shadow:0 4px 0 rgba(26,47,74,.2); }
+  .chip.selected{ background:#FFF3B8; border-color:var(--rosa); transform:scale(1.07); }
+  .chip.dragging{ opacity:.35; }
+  .chip.placed{ cursor:default; background:#DDF3E3; border-color:var(--verde); box-shadow:none; font-size:clamp(17px,2vw,22px); padding:4px 12px; min-height:42px; }
+  .ghost-chip{ position:fixed; z-index:500; pointer-events:none; transform:translate(-50%,-60%) scale(1.1); box-shadow:0 10px 20px rgba(0,0,0,.3); }
+  .bins{ display:grid; gap:14px; }
+  .bin{ border:4px dashed var(--c); border-radius:24px; background:#fff; min-height:230px; display:flex; flex-direction:column; cursor:pointer; overflow:hidden; }
+  .bin-h{ background:var(--c); color:#fff; font-family:'Fredoka One',cursive; font-size:clamp(16px,2.2vw,24px); text-transform:uppercase; padding:10px 8px; text-align:center; line-height:1.15; }
+  .bin-h small{ display:block; font-family:'Lato',sans-serif; font-weight:800; font-size:clamp(11px,1.4vw,14px); opacity:.95; }
+  .bin-b{ display:flex; flex-wrap:wrap; gap:8px; padding:12px; align-content:flex-start; flex:1; }
+  .addown{ background:#fff; border:3px dashed var(--giallo); border-radius:20px; padding:14px; display:flex; flex-direction:column; gap:10px; }
+  .addown input{ font-family:'Fredoka One',cursive; font-size:22px; border:3px solid var(--blunotte); border-radius:14px; padding:8px 14px; min-height:52px; width:100%; }
+  .addown .row{ display:flex; flex-wrap:wrap; gap:8px; }
+
+  .tabs{ display:flex; flex-wrap:wrap; gap:10px; }
+  .tab{ font-family:'Fredoka One',cursive; font-size:clamp(16px,2vw,20px); border:3px solid var(--c); background:#fff; color:var(--c); border-radius:999px; padding:8px 18px; min-height:48px; cursor:pointer; }
+  .tab.on{ background:var(--c); color:#fff; }
+  .nchips{ display:flex; flex-wrap:wrap; gap:10px; }
+  .nchip{ font-family:'Fredoka One',cursive; font-size:clamp(20px,2.4vw,26px); background:#fff; border:3px solid var(--blunotte); border-radius:16px; padding:8px 18px; min-height:52px; cursor:pointer; box-shadow:0 4px 0 rgba(26,47,74,.2); text-transform:uppercase; }
+  .nchip.tried{ background:#EAF7F9; border-color:var(--turchese); }
+  .nchip.cur{ background:#FFF3B8; border-color:var(--rosa); }
+  .machine{ display:grid; grid-template-columns:1fr auto 1fr; gap:10px; align-items:center; }
+  .mbox{ background:#fff; border:4px solid var(--c); border-radius:24px; padding:14px 10px; text-align:center; min-height:150px; display:flex; flex-direction:column; justify-content:center; gap:6px; }
+  .mlab{ font-family:'Fredoka One',cursive; font-size:clamp(14px,1.8vw,18px); color:var(--c); text-transform:uppercase; }
+  .mword{ font-family:'Fredoka One',cursive; font-size:clamp(28px,5vw,52px); line-height:1.1; text-transform:uppercase; word-break:break-word; }
+  .mword .art{ color:#7a8aa0; }
+  .mword .end{ color:var(--rosa); background:#FFF3B8; border-radius:8px; padding:0 4px; }
+  .marrow{ font-size:clamp(36px,5vw,60px); color:var(--arancio); }
+  .machine.go .mbox.out{ animation:pop .5s cubic-bezier(.2,.9,.3,1.3); }
+  .machine.go .marrow{ animation:pulse .5s; }
+  @keyframes pop{ from{ transform:scale(.6); opacity:0;} to{ transform:scale(1); opacity:1;} }
+  .rules{ background:#fff; border:4px solid var(--arancio); border-radius:24px; padding:16px; display:flex; flex-direction:column; gap:12px; }
+  .rule-row{ display:flex; flex-wrap:wrap; align-items:center; gap:10px; font-weight:900; font-size:clamp(16px,2vw,21px); }
+  .rule-row .opt{ font-family:'Fredoka One',cursive; font-size:22px; border:3px solid var(--blunotte); background:#fff; border-radius:14px; min-width:56px; min-height:48px; cursor:pointer; text-transform:uppercase; }
+  .rule-row .opt.ok{ background:#DDF3E3; border-color:var(--verde); }
+  .rule-row .opt.ko{ background:#FFD9E5; border-color:var(--rosa); animation:shake .4s; }
+
+  .dots{ display:flex; gap:8px; flex-wrap:wrap; }
+  .dot{ width:16px; height:16px; border-radius:50%; background:#E7DFC8; }
+  .dot.on{ background:var(--verde); } .dot.cur{ background:var(--giallo); transform:scale(1.25); }
+  .task{ background:#fff; border:4px solid var(--verde); border-radius:24px; padding:16px; display:flex; flex-direction:column; gap:14px; }
+  .task-dir{ font-family:'Fredoka One',cursive; font-size:15px; color:var(--turchese); text-transform:uppercase; }
+  .task-q{ display:flex; flex-wrap:wrap; align-items:center; gap:14px; }
+  .src{ font-family:'Fredoka One',cursive; font-size:clamp(26px,4.4vw,46px); text-transform:uppercase; background:#FFF3B8; border-radius:16px; padding:6px 18px; }
+  .arr{ font-size:clamp(28px,4vw,44px); color:var(--arancio); }
+  .slot{ font-family:'Fredoka One',cursive; font-size:clamp(26px,4.4vw,46px); text-transform:uppercase; min-width:90px; min-height:62px; border:4px dashed #b8c4d4; border-radius:16px; padding:2px 16px; display:inline-flex; align-items:center; justify-content:center; color:#b8c4d4; }
+  .slot.full{ border:4px solid var(--verde); background:#DDF3E3; color:var(--blunotte); }
+  .opts-t{ font-weight:900; font-size:clamp(14px,1.8vw,17px); text-transform:uppercase; color:#4c5e75; }
+  .opts{ display:flex; flex-wrap:wrap; gap:10px; }
+  .opt-btn{ font-family:'Fredoka One',cursive; font-size:clamp(22px,3vw,30px); text-transform:uppercase; background:#fff; border:3px solid var(--blunotte); border-radius:16px; padding:6px 22px; min-height:56px; cursor:pointer; box-shadow:0 4px 0 rgba(26,47,74,.2); }
+  .opt-btn:active{ transform:translateY(3px); box-shadow:none; }
+  .opt-btn.ok{ background:#DDF3E3; border-color:var(--verde); }
+  .opt-btn.ko{ background:#FFD9E5; border-color:var(--rosa); animation:shake .4s; }
+  .opt-btn[disabled]{ cursor:default; }
+  .find{ background:#fff; border:4px solid var(--giallo); border-radius:24px; padding:16px; display:flex; flex-direction:column; gap:12px; }
+  .find h3{ margin:0; font-family:'Fredoka One',cursive; font-weight:400; font-size:clamp(20px,2.6vw,28px); text-transform:uppercase; color:var(--rosa); }
+  .choice{ text-align:left; font-weight:900; font-size:clamp(16px,2vw,20px); background:#fff; border:3px solid var(--blunotte); border-radius:16px; padding:12px 16px; min-height:56px; cursor:pointer; }
+  .choice.ok{ background:#DDF3E3; border-color:var(--verde); }
+  .choice.ko{ background:#FFD9E5; border-color:var(--rosa); animation:shake .4s; }
+  .reveal{ background:#DDF3E3; border:3px solid var(--verde); border-radius:18px; padding:14px 16px; font-weight:800; font-size:clamp(16px,2vw,20px); line-height:1.5; }
+  .reveal mark{ background:#FFF3B8; color:var(--rosa); border-radius:6px; padding:0 4px; font-weight:900; }
+  .pairs{ display:flex; flex-wrap:wrap; gap:8px; margin-top:8px; }
+  .pair{ font-family:'Fredoka One',cursive; background:#fff; border:3px solid var(--verde); border-radius:14px; padding:6px 14px; text-transform:uppercase; font-size:clamp(16px,2vw,21px); }
+
+  /* collega (coppie) */
+  .pairs-game{ display:grid; grid-template-columns:1fr 1fr; gap:18px; }
+  .pcol{ display:flex; flex-direction:column; gap:10px; }
+  .pcard{ background:#fff; border:4px solid var(--blunotte); border-radius:18px; min-height:68px; padding:8px 14px; font-family:'Fredoka One',cursive; font-size:clamp(17px,2.3vw,26px); text-transform:uppercase; cursor:pointer; display:flex; align-items:center; justify-content:center; gap:10px; text-align:center; box-shadow:0 4px 0 rgba(26,47,74,.2); line-height:1.1; }
+  .pcard .big{ font-size:clamp(30px,5vw,48px); line-height:1; }
+  .pcard.sel{ background:#FFF3B8; border-color:var(--rosa); transform:scale(1.03); }
+  .pcard.done{ cursor:default; box-shadow:none; background:#F4FBF6; }
+  .pcard.ko{ animation:shake .4s; background:#FFD9E5; border-color:var(--rosa); }
+
+  /* insiemi */
+  .oval{ border:5px solid var(--c); border-radius:50% / 40%; padding:22px 26px; display:flex; flex-wrap:wrap; gap:18px; justify-content:center; background:#fff; }
+  .oitem{ display:flex; flex-direction:column; align-items:center; gap:6px; }
+  .oitem .big{ font-size:clamp(40px,7vw,70px); line-height:1; }
+  .oitem .lab{ font-family:'Fredoka One',cursive; font-size:clamp(17px,2.2vw,24px); border:3px solid var(--c); border-radius:12px; padding:2px 12px; background:#fff; text-transform:uppercase; }
+  .gq{ font-family:'Fredoka One',cursive; font-size:clamp(18px,2.4vw,24px); text-transform:uppercase; }
+
+  /* intruso */
+  .intr{ display:flex; flex-wrap:wrap; gap:12px; justify-content:center; background:#fff; border:4px solid var(--giallo); border-radius:24px; padding:18px; }
+  .intr .opt-btn{ font-size:clamp(22px,3.2vw,34px); padding:10px 26px; min-height:72px; }
+
+  /* schemi */
+  .sch{ background:#fff; border:4px solid var(--c); border-radius:28px; padding:18px; display:flex; flex-direction:column; gap:16px; }
+  .sch-title{ font-family:'Fredoka One',cursive; font-size:clamp(24px,3.4vw,38px); color:var(--c); text-transform:uppercase; line-height:1.05; }
+  .sch-def{ background:#FFF9E0; border:3px solid var(--giallo); border-radius:18px; padding:12px 16px; font-weight:800; font-size:clamp(17px,2.2vw,22px); line-height:1.45; }
+  .sch-def b{ color:var(--rosa); }
+  .sch-hint{ font-weight:900; font-size:clamp(14px,1.8vw,17px); color:var(--turchese); text-transform:uppercase; }
+  .sch-cols{ display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:14px; }
+  .sch-col{ background:#fff; border:4px solid var(--c); border-radius:22px; padding:12px; cursor:pointer; text-align:center; display:flex; flex-direction:column; gap:8px; align-items:center; box-shadow:0 5px 0 rgba(26,47,74,.14); }
+  .sch-col .ch{ font-weight:900; font-size:clamp(13px,1.7vw,16px); color:#4c5e75; text-transform:uppercase; }
+  .sch-col .emo{ font-size:clamp(40px,6vw,60px); line-height:1; }
+  .sch-col .nm{ font-family:'Fredoka One',cursive; font-size:clamp(20px,2.6vw,28px); color:var(--c); text-transform:uppercase; }
+  .sch-col .ex{ display:none; flex-wrap:wrap; gap:6px; justify-content:center; }
+  .sch-col.open .ex{ display:flex; }
+  .sch-col .tap{ font-weight:800; font-size:13px; color:#7a8aa0; text-transform:uppercase; }
+  .sch-col.open .tap{ display:none; }
+  .xchip{ font-family:'Fredoka One',cursive; font-size:clamp(16px,2vw,20px); background:#FFF3B8; border-radius:12px; padding:3px 12px; text-transform:uppercase; }
+  .sch-legend{ display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+  .sch-leg{ border:4px solid var(--c); border-radius:20px; padding:12px 14px; background:#fff; }
+  .sch-leg .tt{ font-family:'Fredoka One',cursive; font-size:clamp(18px,2.4vw,26px); color:var(--c); text-transform:uppercase; }
+  .sch-leg .ss{ font-weight:800; font-size:clamp(14px,1.8vw,18px); margin-top:4px; }
+  .tree{ display:flex; flex-direction:column; gap:12px; }
+  .gnode{ border:4px solid var(--c); border-radius:20px; background:#fff; overflow:hidden; }
+  .gnode > button{ width:100%; background:var(--c); color:#fff; border:none; font-family:'Fredoka One',cursive; font-size:clamp(20px,2.6vw,28px); text-transform:uppercase; padding:10px 16px; cursor:pointer; text-align:left; display:flex; justify-content:space-between; align-items:center; min-height:56px; }
+  .gnode .kids{ display:none; padding:14px; flex-wrap:wrap; gap:14px; justify-content:center; }
+  .gnode.open .kids{ display:flex; }
+  .kid{ display:flex; flex-direction:column; align-items:center; gap:4px; }
+  .kid .big{ font-size:clamp(34px,5vw,52px); line-height:1; }
+  .twobox{ display:grid; grid-template-columns:1fr 1fr; gap:14px; }
+  .tbx{ border:4px solid var(--c); border-radius:22px; padding:14px; text-align:center; background:#fff; display:flex; flex-direction:column; gap:6px; align-items:center; }
+  .tbx .tt{ font-family:'Fredoka One',cursive; font-size:clamp(22px,3vw,32px); color:var(--c); text-transform:uppercase; }
+  .tbx .sub{ font-weight:900; font-size:clamp(15px,2vw,20px); text-transform:uppercase; }
+  .tbx .emo{ font-size:clamp(34px,5vw,54px); line-height:1.1; }
+  .atab{ display:grid; grid-template-columns:1fr auto 1fr; gap:8px 12px; align-items:center; background:#fff; border:3px solid #E7DFC8; border-radius:20px; padding:14px; }
+  .atab .a{ font-family:'Fredoka One',cursive; font-size:clamp(20px,2.8vw,30px); text-align:center; border-radius:14px; padding:6px 10px; text-transform:uppercase; }
+  .atab .a.s{ background:#DDF1F4; color:var(--turchese); } .atab .a.p{ background:#FFE0EB; color:var(--rosa); }
+  .atab .ar{ font-size:26px; color:var(--arancio); }
+  .atab .eg{ grid-column:1 / -1; text-align:center; font-weight:800; font-size:clamp(14px,1.8vw,18px); color:#4c5e75; margin:-2px 0 6px; }
+  .two-change{ display:flex; flex-wrap:wrap; gap:12px; align-items:center; justify-content:center; font-family:'Fredoka One',cursive; font-size:clamp(18px,2.4vw,26px); text-transform:uppercase; }
+  .two-change .box{ border-radius:16px; padding:8px 16px; color:#fff; }
+
+  .reward{ background:#fff; border:4px solid var(--giallo); border-radius:24px; padding:18px; text-align:center; display:flex; flex-direction:column; align-items:center; gap:8px; animation:pop .5s cubic-bezier(.2,.9,.3,1.3); box-shadow:0 10px 30px rgba(26,47,74,.18); }
+  .reward-emo{ font-size:64px; line-height:1; }
+  .reward-t{ font-family:'Fredoka One',cursive; font-size:clamp(26px,4vw,40px); color:var(--rosa); text-transform:uppercase; }
+  .reward-s{ font-weight:800; font-size:clamp(15px,2vw,19px); }
+  .finish-wrap{ text-align:center; }
+  .finish-title{ font-family:'Fredoka One',cursive; font-size:clamp(30px,6vw,60px); color:var(--rosa); line-height:1.1; }
+  .finish-sub{ font-family:'Fredoka One',cursive; font-size:clamp(20px,3vw,32px); color:var(--turchese); }
+  .confetti{ position:fixed; inset:0; pointer-events:none; overflow:hidden; z-index:300; }
+  .confetti-piece{ position:absolute; top:-24px; width:10px; height:14px; opacity:.95; border-radius:2px; animation-name:confettiFall; animation-timing-function:linear; animation-fill-mode:forwards; }
+  @keyframes confettiFall{ 0%{ transform:translateY(0) rotate(0deg);} 100%{ transform:translateY(110vh) rotate(720deg); opacity:.8;} }
+  .toast{ position:fixed; top:84px; left:50%; transform:translateX(-50%); z-index:400; background:var(--blunotte); color:#fff; border-radius:999px; padding:10px 22px; font-weight:800; font-size:16px; box-shadow:0 6px 16px rgba(26,47,74,.3); max-width:92%; text-align:center; }
+
+  .altre-app-wrap{ display:flex; justify-content:center; flex-shrink:0; background:var(--pal-bg); padding:10px 16px 12px; }
+  .btn-altre-app{ background:#FFFFFF; color:var(--turchese); border:2px solid var(--turchese); border-radius:999px; padding:10px 22px; font-weight:800; text-transform:uppercase; font-size:13px; cursor:pointer; text-decoration:none; display:inline-flex; align-items:center; gap:6px; min-height:44px; }
+  .pal-footer{ background:var(--pal-bg); border-top:2px solid var(--giallo); text-align:center; padding:9px 16px; font-size:12px; color:var(--blunotte); font-weight:800; flex-shrink:0; }
+  .pal-footer a{ color:var(--turchese); text-decoration:none; font-weight:900; }
+
+  .modal-overlay{ position:fixed; inset:0; background:rgba(30,20,70,.55); backdrop-filter:blur(4px); display:none; align-items:center; justify-content:center; z-index:999; padding:16px; }
+  .modal-overlay.open{ display:flex; }
+  .modal-box{ background:#FFFDF5; border-radius:24px; max-width:580px; width:100%; max-height:85vh; overflow-y:auto; animation:modalIn .25s ease; }
+  @keyframes modalIn{ from{ opacity:0; transform:scale(.95) translateY(10px);} to{ opacity:1; transform:scale(1) translateY(0);} }
+  .modal-header{ background:var(--turchese); color:#fff; font-family:'Fredoka One',cursive; font-size:20px; padding:18px 20px; border-radius:24px 24px 0 0; display:flex; align-items:center; justify-content:space-between; text-transform:uppercase; }
+  .modal-close{ background:rgba(255,255,255,0.25); border:none; border-radius:50%; width:44px; height:44px; color:#fff; font-size:18px; cursor:pointer; flex-shrink:0; }
+  .modal-body{ padding:20px; display:flex; flex-direction:column; gap:14px; }
+  .instr-step{ display:flex; gap:12px; align-items:flex-start; }
+  .instr-num{ width:30px; height:30px; border-radius:50%; flex-shrink:0; display:flex; align-items:center; justify-content:center; color:#fff; font-weight:700; }
+  .instr-title{ font-weight:800; text-transform:uppercase; font-size:13px; color:var(--blunotte); }
+  .instr-desc{ font-size:14px; color:#444; margin-top:2px; }
+  .modal-footer{ background:var(--pal-bg); border-top:1px solid #E7DFC8; text-align:center; padding:14px; border-radius:0 0 24px 24px; font-weight:700; font-size:13px; color:var(--blunotte); }
+  .confirm-text{ font-size:16px; font-weight:700; line-height:1.4; margin:0; }
+  .confirm-actions{ display:flex; flex-wrap:wrap; gap:10px; justify-content:center; }
+
+  @media (min-width:768px){
+    .pal-header{ min-height:72px; } .pal-bus-wrap{ width:58px; height:58px; } .pal-divider{ height:46px; }
+    .pal-app-title{ font-size:26px; }
+    .help-btn,.fullscreen-btn,.schemi-btn{ width:46px; height:46px; }
+  }
+  @media (min-width:1024px){
+    .pal-header{ min-height:82px; padding:0 16px; } .pal-bus-wrap{ width:68px; height:68px; } .pal-divider{ height:54px; margin:0 14px; }
+    .pal-app-title{ font-size:32px; } .home-seo-line{ font-size:14px; }
+    .btn{ font-size:20px; min-height:58px; }
+    .help-btn,.fullscreen-btn,.schemi-btn{ width:50px; height:50px; font-size:21px; }
+    .panel{ padding:16px 24px 28px; }
+  }
+  @media (min-width:1024px) and (max-height:860px){
+    .altre-app-wrap{ padding:6px 16px 8px; } .pal-footer{ padding:6px 16px; }
+  }
+  @media (max-width:640px){
+    .bins{ gap:6px; }
+    .machine{ grid-template-columns:1fr; }
+    .marrow{ transform:rotate(90deg); text-align:center; }
+    .hero{ flex-direction:column; text-align:center; }
+    .pairs-game{ gap:10px; }
+    .sch-legend,.twobox{ grid-template-columns:1fr; }
+    .bin-b{ padding:8px; gap:6px; }
+    .chip.placed{ font-size:15px; padding:2px 8px; }
+  }
+  @media (max-width:480px){
+    .pal-app-title{ font-size:15px; } .pal-bus-wrap{ width:42px; height:42px; } .home-seo-line{ display:none; }
+    .pal-header-actions{ gap:5px; } .help-btn,.fullscreen-btn,.schemi-btn{ width:38px; height:38px; font-size:17px; }
+  }
+  @media (prefers-reduced-motion:reduce){
+    *{ animation-duration:.01ms !important; animation-iteration-count:1 !important; transition-duration:.01ms !important; }
+    .confetti{ display:none; }
+  }
+  .qline{ font-family:'Fredoka One',cursive; font-size:clamp(24px,3.6vw,40px); text-transform:uppercase; line-height:1.15; }
+  .qline small{ display:block; font-family:'Lato',sans-serif; font-weight:800; font-size:clamp(14px,1.8vw,18px); color:#4c5e75; margin-top:4px; text-transform:none; }
+  .cloud{ display:flex; flex-wrap:wrap; gap:10px; justify-content:center; background:#fff; border:3px solid #E7DFC8; border-radius:20px; padding:16px; }
+  .pick{ font-family:'Fredoka One',cursive; font-size:clamp(18px,2.4vw,26px); background:#fff; border:3px solid var(--blunotte); border-radius:999px; padding:8px 20px; min-height:52px; cursor:pointer; box-shadow:0 4px 0 rgba(26,47,74,.2); text-transform:uppercase; }
+  .pick.sel{ background:#FFF3B8; border-color:var(--rosa); }
+  .pick.good{ background:#DDF3E3; border-color:var(--verde); cursor:default; }
+  .pick.bad{ background:#FFD9E5; border-color:var(--rosa); animation:shake .4s; }
+  .pre{ background:#fff; border:3px solid #E7DFC8; border-radius:20px; padding:14px 16px; font-weight:700; font-size:clamp(16px,2vw,21px); line-height:1.7; }
+  .pre b{ color:var(--turchese); }
+  .grows{ display:flex; flex-direction:column; gap:10px; }
+  .grow{ display:flex; flex-wrap:wrap; align-items:center; gap:10px; background:#fff; border:3px solid #E7DFC8; border-radius:18px; padding:10px 14px; }
+  .grow .ph{ font-family:'Fredoka One',cursive; font-size:clamp(20px,2.8vw,30px); flex:1 1 180px; text-transform:uppercase; }
+  .tg{ display:inline-flex; gap:6px; }
+  .tg button{ font-family:'Fredoka One',cursive; font-size:clamp(14px,1.8vw,18px); border:3px solid var(--blunotte); background:#fff; border-radius:12px; padding:4px 12px; min-height:46px; cursor:pointer; text-transform:uppercase; }
+  .tg button.sel{ background:#FFF3B8; border-color:var(--rosa); }
+  .grow.ok{ border-color:var(--verde); background:#F4FBF6; }
+  .grow.ko{ border-color:var(--rosa); animation:shake .4s; }
+  .lgroup{ background:#fff; border:4px solid var(--c); border-radius:22px; padding:12px 14px; display:flex; flex-direction:column; gap:8px; }
+  .lgroup.full{ background:#F4FBF6; border-color:var(--verde); }
+  .lgroup .lt{ font-family:'Fredoka One',cursive; font-size:clamp(20px,2.6vw,28px); color:var(--c); text-transform:uppercase; }
+  .lrow{ display:flex; gap:8px; flex-wrap:wrap; align-items:center; }
+  .lgroup input,.frow input{ font-family:'Lato',sans-serif; font-weight:800; font-size:20px; border:3px solid var(--blunotte); border-radius:14px; padding:8px 14px; min-height:48px; flex:1 1 160px; min-width:0; }
+  .lchips{ display:flex; flex-wrap:wrap; gap:8px; }
+  .lchip{ font-family:'Fredoka One',cursive; font-size:clamp(16px,2vw,20px); border-radius:12px; padding:3px 12px; border:3px solid var(--verde); background:#DDF3E3; display:inline-flex; align-items:center; gap:4px; }
+  .lchip.q{ border-color:var(--arancio); background:#FFF0D6; }
+  .lchip button{ border:none; background:transparent; font-size:16px; cursor:pointer; padding:0 2px; min-width:28px; min-height:28px; }
+  .lcount{ font-weight:900; font-size:15px; color:var(--turchese); text-transform:uppercase; }
+  .frow{ background:#fff; border:3px solid #E7DFC8; border-radius:18px; padding:10px 14px; display:flex; flex-direction:column; gap:8px; }
+  .frow.ok{ border-color:var(--verde); background:#F4FBF6; }
+  .frow .fl{ font-weight:900; font-size:clamp(16px,2vw,21px); }
+  .frow .fr{ display:flex; gap:8px; flex-wrap:wrap; }
+  .bar{ height:14px; background:#E7DFC8; border-radius:999px; overflow:hidden; }
+  .bar > i{ display:block; height:100%; background:var(--verde); }
+  .bank{ display:flex; flex-wrap:wrap; gap:8px; }
+  .st-card.locked{ opacity:.55; cursor:not-allowed; background:#F1EEE4; }
+  .cw{ display:grid; gap:3px; grid-template-columns:repeat(var(--n),1fr); max-width:min(100%,560px); margin:0 auto; touch-action:manipulation; }
+  .cw-cell{ aspect-ratio:1; font-family:'Fredoka One',cursive; font-size:clamp(15px,3.6vw,28px); background:#fff; border:2px solid #E7DFC8; border-radius:8px; cursor:pointer; padding:0; min-height:32px; display:flex; align-items:center; justify-content:center; color:var(--blunotte); }
+  .cw-cell.start{ background:#FFF3B8; border-color:var(--rosa); }
+  .cw-cell.found{ color:#fff; }
+  .cw-words{ display:flex; flex-wrap:wrap; gap:8px; justify-content:center; }
+  .cw-word{ font-family:'Fredoka One',cursive; font-size:clamp(15px,2vw,20px); padding:4px 14px; border-radius:999px; border:3px solid var(--blunotte); background:#fff; text-transform:uppercase; }
+  .cw-word.done{ text-decoration:line-through; opacity:.75; background:#DDF3E3; border-color:var(--verde); }
+  .dom{ display:inline-flex; align-items:stretch; border:3px solid var(--blunotte); border-radius:14px; background:#fff; font-family:'Fredoka One',cursive; text-transform:uppercase; font-size:clamp(15px,2.2vw,22px); box-shadow:0 3px 0 rgba(26,47,74,.2); overflow:hidden; color:var(--blunotte); padding:0; }
+  .dom span{ padding:10px 12px; display:flex; align-items:center; justify-content:center; text-align:center; min-width:70px; }
+  .dom span + span{ border-left:3px dashed var(--blunotte); }
+  button.dom{ cursor:pointer; min-height:56px; }
+  .dom.ko{ animation:shake .4s; background:#FFD9E5; border-color:var(--rosa); }
+  .dom.fixed{ background:#DDF3E3; border-color:var(--verde); }
+  .dom-chain{ display:flex; flex-wrap:wrap; gap:8px; align-items:center; background:#fff; border:3px dashed var(--giallo); border-radius:18px; padding:12px; min-height:76px; }
+  .dom-pool{ display:flex; flex-wrap:wrap; gap:12px; justify-content:center; }
+  .swp{ display:grid; grid-template-columns:repeat(3,1fr); gap:8px; max-width:640px; margin:0 auto; }
+  .swp button{ min-height:70px; font-family:'Fredoka One',cursive; font-size:clamp(14px,2.4vw,24px); text-transform:uppercase; background:#fff; border:4px solid var(--blunotte); border-radius:16px; cursor:pointer; box-shadow:0 4px 0 rgba(26,47,74,.2); padding:6px; color:var(--blunotte); }
+  .swp button.sel{ background:#FFF3B8; border-color:var(--rosa); transform:scale(1.04); }
+  .swp button.ok{ background:#DDF3E3; border-color:var(--verde); cursor:default; box-shadow:none; }
+  .rid{ display:flex; flex-wrap:wrap; gap:8px; align-items:center; }
+  .rid input{ font-family:'Lato',sans-serif; font-weight:900; font-size:22px; border:3px solid var(--blunotte); border-radius:14px; padding:8px 14px; min-height:52px; flex:1 1 200px; min-width:0; }
+</style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <div class="pal-header">
+    <a class="pal-logo-link" href="https://www.playandlearnitalia.com" target="_blank" rel="noopener" aria-label="Play and Learn Italia">
+      <div class="pal-bus-wrap">
+        <img src="https://playandlearnitalia.com/wp-content/uploads/2026/05/Logo-pal-lavagna.png" alt="Play and Learn Italia" onerror="this.parentNode.textContent='🚌'">
+      </div>
+    </a>
+    <div class="pal-divider"></div>
+    <div class="pal-title-block">
+      <h1 class="pal-app-title">
+        <span style="color:#209AAB">I NOMI</span>
+        <span style="color:#E01760">A LIVELLI</span>
+      </h1>
+      <div class="home-seo-line">Dieci livelli di grammatica per la classe terza, con schemi e giochi: da usare online su PC, LIM e tablet.</div>
+    </div>
+    <div class="pal-header-actions">
+      <button class="schemi-btn" id="schemiBtn" aria-label="I miei schemi" title="Schemi">&#128216;</button>
+      <button class="help-btn" id="helpBtn" aria-label="Come si usa">?</button>
+      <button class="fullscreen-btn" id="fsBtn" aria-label="Schermo intero">&#9974;</button>
+    </div>
+  </div>
+
+  <main class="stage" id="stage" aria-live="polite"></main>
+
+  <div class="altre-app-wrap">
+    <a class="btn-altre-app" href="https://www.playandlearnitalia.com" target="_blank" rel="noopener">&#127880; SCOPRI ALTRE APP</a>
+  </div>
+  <footer class="pal-footer">
+    &copy; <a href="https://www.playandlearnitalia.com" target="_blank" rel="noopener">Play and Learn Italia</a> &middot; I tuoi progressi restano solo su questo dispositivo.
+  </footer>
+
+  <!-- MODALE AIUTO -->
+  <div class="modal-overlay" id="helpModal" role="dialog" aria-modal="true" aria-label="Come si usa">
+    <div class="modal-box">
+      <div class="modal-header"><span>COME SI USA</span><button class="modal-close" id="helpClose" aria-label="Chiudi">&#10005;</button></div>
+      <div class="modal-body">
+        <div class="instr-step"><div class="instr-num" style="background:#209AAB">1</div><div><div class="instr-title">SCEGLI IL LIVELLO</div><div class="instr-desc">Ci sono dieci livelli. Si comincia dal primo: finiti tutti i giochi e la sfida finale, si apre il livello successivo.</div></div></div>
+        <div class="instr-step"><div class="instr-num" style="background:#E01760">2</div><div><div class="instr-title">GUARDA LO SCHEMA</div><div class="instr-desc">Ogni livello comincia con uno schema: tocca i riquadri per scoprire gli esempi. Gli schemi si ritrovano sempre con il pulsante del libro in alto.</div></div></div>
+        <div class="instr-step"><div class="instr-num" style="background:#E7900C">3</div><div><div class="instr-title">TOCCA O TRASCINA</div><div class="instr-desc">Le parole si toccano o si trascinano con il dito o con il mouse. Se sbagli riprova: nessuno ti toglie punti.</div></div></div>
+        <div class="instr-step"><div class="instr-num" style="background:#6AB77D">4</div><div><div class="instr-title">RACCOGLI LE STELLE</div><div class="instr-desc">Ogni gioco finito vale una stella, anche la sfida finale (domino, puzzle, crucipuzzle o indovinelli). Con tutte le 50 stelle arriva la festa finale!</div></div></div>
+        <div class="instr-step"><div class="instr-num" style="background:#1A2F4A">&#9998;</div><div><div class="instr-title">PER LA MAESTRA</div><div class="instr-desc">Liv. 1 i nomi (p. 43) · 2 generici e specifici (p. 44) · 3 maschili e femminili (pp. 46, 55) · 4 singolare e plurale (pp. 47, 54) · 5 concreti e astratti (pp. 49, 54) · 6 primitivi e derivati (pp. 50, 54) · 7 alterati (pp. 51, 54, 55) · 8 composti (pp. 52, 55) · 9 collettivi (p. 53) · 10 verifica «Ora il maestro sei tu» (p. 48). Nei giochi con elenchi liberi la maestra approva con ✔ le parole non previste. Molti giochi sono pensati per due: prima si parla, poi si tocca.</div></div></div>
+        <div style="display:flex;flex-wrap:wrap;gap:10px;justify-content:center">
+          <button class="btn ghost" id="teacherBtn">&#128273; AREA MAESTRA</button>
+        </div>
+      </div>
+      <div class="modal-footer">Play and Learn Italia &middot; playandlearnitalia.com</div>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="teacherModal" role="dialog" aria-modal="true" aria-label="Area maestra">
+    <div class="modal-box">
+      <div class="modal-header"><span>AREA MAESTRA</span><button class="modal-close" id="teacherClose" aria-label="Chiudi">&#10005;</button></div>
+      <div class="modal-body">
+        <div id="tLock">
+          <p class="confirm-text">Scrivi il codice per aprire le opzioni della maestra.</p>
+          <div class="rid"><input id="tCode" type="password" autocomplete="off" aria-label="Codice maestra" placeholder="CODICE"><button class="btn rosa" id="tGo">ENTRA</button></div>
+          <div class="fb no" id="tErr"></div>
+        </div>
+        <div id="tOpen" hidden style="display:none;flex-wrap:wrap;gap:10px;justify-content:center">
+          <button class="btn ghost" id="unlockBtn"></button>
+          <button class="btn ghost" id="resetBtn">&#8635; RICOMINCIA TUTTO</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="confirmModal" role="dialog" aria-modal="true" aria-label="Conferma">
+    <div class="modal-box">
+      <div class="modal-header"><span>SEI SICURO?</span></div>
+      <div class="modal-body">
+        <p class="confirm-text">Vuoi cancellare le stelle e ricominciare da capo? Questa azione non si può annullare.</p>
+        <div class="confirm-actions">
+          <button class="btn ghost" id="confNo">NO, TORNA INDIETRO</button>
+          <button class="btn rosa" id="confYes">SÌ, RICOMINCIA</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<script>
+(function(){
+  'use strict';
+  var KEY = 'pal_i_nomi_a_livelli_classe_v1';
+  var stage = document.getElementById('stage');
+  var state = { done:{}, seen:{}, sequential:true };
+
+  function $(id){ return document.getElementById(id); }
+  function el(tag, cls, html){ var e = document.createElement(tag); if(cls) e.className = cls; if(html != null) e.innerHTML = html; return e; }
+  function shuffle(a){ a = a.slice(); for(var i = a.length - 1; i > 0; i--){ var j = Math.floor(Math.random() * (i + 1)); var t = a[i]; a[i] = a[j]; a[j] = t; } return a; }
+  function load(){ try{ var v = JSON.parse(localStorage.getItem(KEY)); if(v && v.done){ state = v; state.seen = state.seen || {}; } }catch(e){} }
+  function save(){ try{ localStorage.setItem(KEY, JSON.stringify(state)); }catch(e){} }
+  function reducedMotion(){ return window.matchMedia && window.matchMedia('(prefers-reduced-motion:reduce)').matches; }
+  function U(s){ return s.toUpperCase(); }
+
+  var toastT = null;
+  function toast(msg){
+    var old = document.querySelector('.toast'); if(old) old.remove();
+    var t = el('div', 'toast', msg); document.body.appendChild(t);
+    clearTimeout(toastT); toastT = setTimeout(function(){ t.remove(); }, 2400);
+  }
+  function speak(text){
+    try{ var s = window.speechSynthesis; if(!s) return; s.cancel(); var u = new SpeechSynthesisUtterance(text); u.lang = 'it-IT'; u.rate = 0.85; s.speak(u); }catch(e){}
+  }
+  function confetti(){
+    if(reducedMotion()) return;
+    var c = el('div', 'confetti'); var cols = ['#209AAB','#D9B918','#E01760','#E7900C','#6AB77D'];
+    for(var i = 0; i < 46; i++){
+      var p = el('div', 'confetti-piece');
+      p.style.left = (Math.random() * 100) + '%'; p.style.background = cols[i % cols.length];
+      p.style.animationDuration = (2.2 + Math.random() * 1.8) + 's'; p.style.animationDelay = (Math.random() * 0.8) + 's';
+      c.appendChild(p);
+    }
+    document.body.appendChild(c); setTimeout(function(){ c.remove(); }, 4800);
+  }
+  function scrollTo(node, block){ setTimeout(function(){ try{ node.scrollIntoView({ behavior: reducedMotion() ? 'auto' : 'smooth', block: block || 'center' }); }catch(e){} }, 70); }
+
+  /* ================== STRUTTURA: LIVELLI E GIOCHI ================== */
+  var LV = [
+    { id:'l1', n:1, title:'I NOMI', sub:'PERSONE, ANIMALI, COSE', pag:'pag. 43', color:'--turchese', emo:'🧩', scheme:scheme1, games:[
+      { id:'l1g1', title:'CACCIA AI NOMI',           sub:'LA MERENDA DI ELENA',          emo:'🔍', run:gHunt1 },
+      { id:'l1g2', title:'COLLEGA AL DISEGNO',       sub:'OGNI NOME HA LA SUA IMMAGINE', emo:'🖼️', run:gMatch1 },
+      { id:'l1g3', title:'PERSONA, ANIMALE O COSA?', sub:'SMISTA I NOMI',                emo:'🧺', run:gSort1 } ] },
+    { id:'l2', n:2, title:'NOMI GENERICI E SPECIFICI', sub:'IL GRUPPO E I SUOI ELEMENTI', pag:'pag. 44', color:'--rosa', emo:'🗂️', scheme:scheme2, games:[
+      { id:'l2g1', title:'GLI INSIEMI',     sub:'DOLCI, FRUTTA, GIOCATTOLI',    emo:'🍎', run:gSets },
+      { id:'l2g2', title:'LEGGI E COLLEGA', sub:'DAI NOMI AL GRUPPO',           emo:'🔗', run:gLink },
+      { id:'l2g3', title:'L’INTRUSO',       sub:'CHI NON FA PARTE DEL GRUPPO?', emo:'🕵️', run:gIntruder } ] },
+    { id:'l3', n:3, title:'NOMI MASCHILI E FEMMINILI', sub:'IL GENERE DEI NOMI', pag:'pagg. 46 e 55', color:'--arancio', emo:'👫', scheme:scheme3, games:[
+      { id:'l3g1', title:'CACCIA AI NOMI',        sub:'SOTTOLINEA NELLE FRASI',      emo:'🔍', run:gHuntMF },
+      { id:'l3g2', title:'MASCHILE O FEMMINILE?', sub:'SMISTA I NOMI',               emo:'🧺', run:gSortMF },
+      { id:'l3g3', title:'TRASFORMA IN COPPIA',   sub:'DAL MASCHILE AL FEMMINILE',   emo:'🔄', run:gTrasfMF },
+      { id:'l3g4', title:'CASI PARTICOLARI',      sub:'MARITO E… MOGLIE!',           emo:'⚠️', run:gCasi },
+      { id:'l3g5', title:'AL FEMMINILE',          sub:'STUDENTE, DOTTORE, POETA…',   emo:'👩', run:gFemm },
+      { id:'l3g6', title:'AL MASCHILE',           sub:'CAMERIERA, CONTESSA, SARTA…', emo:'👨', run:gMasc } ] },
+    { id:'l4', n:4, title:'SINGOLARE E PLURALE', sub:'UNO O TANTI?', pag:'pagg. 47 e 54', color:'--verde', emo:'🔢', scheme:scheme4, games:[
+      { id:'l4g1', title:'CACCIA AI NOMI',            sub:'LA CAMERA DI ALICE',          emo:'🛏️', run:gHunt3 },
+      { id:'l4g2', title:'UNO O TANTI?',              sub:'SINGOLARE O PLURALE?',        emo:'📦', run:gSort3 },
+      { id:'l4g3', title:'LA MACCHINA DEI PLURALI',   sub:'SCOPRI COME CAMBIANO I NOMI', emo:'⚙️', run:gMachine },
+      { id:'l4g4', title:'TRASFORMA IN COPPIA',       sub:'NOME E ARTICOLO, IN DUE',     emo:'🔄', run:gTrasforma },
+      { id:'l4g5', title:'DETECTIVE DEI NOMI STRANI', sub:'CHE COSA SUCCEDE?',           emo:'🕵️', run:gDetective },
+      { id:'l4g6', title:'PLURALI DA ATTENZIONE',     sub:'FUNGO, GIOSTRA, SPIAGGIA…',   emo:'⚠️', run:gPlurali } ] },
+    { id:'l5', n:5, title:'NOMI CONCRETI E ASTRATTI', sub:'COSE CHE VEDO E COSE CHE SENTO', pag:'pagg. 49 e 54', color:'--blunotte', emo:'💭', scheme:scheme5, games:[
+      { id:'l5g1', title:'CONCRETO O ASTRATTO?', sub:'SMISTA I NOMI DEL TESTO',      emo:'🧺', run:gSortCA },
+      { id:'l5g2', title:'CHE EMOZIONE PROVO?',  sub:'SCRIVI I TUOI NOMI ASTRATTI',  emo:'😊', run:gEmozioni },
+      { id:'l5g3', title:'COLORA GLI ASTRATTI',  sub:'SOLO I NOMI ASTRATTI',         emo:'🎨', run:gPickAstratti },
+      { id:'l5g4', title:'UNA FRASE PER OGNUNO', sub:'SCEGLI QUATTRO ASTRATTI',      emo:'✏️', run:gFrasiAstratti } ] },
+    { id:'l6', n:6, title:'NOMI PRIMITIVI E DERIVATI', sub:'LE FAMIGLIE DI PAROLE', pag:'pagg. 50 e 54', color:'--turchese', emo:'🌳', scheme:scheme6, games:[
+      { id:'l6g1', title:'LE FAMIGLIE DI PAROLE', sub:'OGNI DERIVATO AL SUO PRIMITIVO', emo:'👪', run:gFamiglie },
+      { id:'l6g2', title:'TROVA IL DERIVATO',     sub:'CAMPANA, VETRO, GOMMA, MANO',    emo:'➡️', run:gDerivato },
+      { id:'l6g3', title:'TROVA IL PRIMITIVO',    sub:'POLLAIO, BAGNINO, FIORAIO…',     emo:'⬅️', run:gPrimitivo },
+      { id:'l6g4', title:'CACCIA AGLI INTRUSI',   sub:'CHI NON È DERIVATO?',            emo:'🕵️', run:gIntrusiDeriv } ] },
+    { id:'l7', n:7, title:'NOMI ALTERATI', sub:'PICCOLO, GRANDE, BELLO, BRUTTO', pag:'pagg. 51, 54 e 55', color:'--rosa', emo:'🔎', scheme:scheme7, games:[
+      { id:'l7g1', title:'I QUATTRO CANI',        sub:'LEGGI E SCEGLI IL NOME',        emo:'🐶', run:gCani },
+      { id:'l7g2', title:'COMPLETA LE DEFINIZIONI', sub:'UNA PORTA PICCOLA: …',        emo:'🚪', run:gDefAlterati },
+      { id:'l7g3', title:'L’ALTERATO GIUSTO',     sub:'QUALE È CORRETTO?',             emo:'✅', run:gAlteratoGiusto },
+      { id:'l7g4', title:'DAL SIGNIFICATO AL NOME', sub:'UN ALBERO GRAZIOSO: …',       emo:'🌲', run:gAlteratiTrasf } ] },
+    { id:'l8', n:8, title:'NOMI COMPOSTI', sub:'DUE PAROLE CHE DIVENTANO UNA', pag:'pagg. 52 e 55', color:'--arancio', emo:'🧱', scheme:scheme8, games:[
+      { id:'l8g1', title:'UNISCI LE PAROLE',      sub:'CASSA + FORTE = CASSAFORTE',    emo:'➕', run:gUnisci },
+      { id:'l8g2', title:'SCOMPONI',              sub:'ASCIUGACAPELLI = ? + ?',        emo:'✂️', run:gScomponi },
+      { id:'l8g3', title:'COLORA I COMPOSTI',     sub:'ABBINA LE PAROLE GIUSTE',       emo:'🎨', run:gComposti },
+      { id:'l8g4', title:'ALTRI NOMI COMPOSTI',   sub:'CONOSCI ALTRE PAROLE?',         emo:'💡', run:gAltriComposti } ] },
+    { id:'l9', n:9, title:'NOMI COLLETTIVI', sub:'UNO SOLO, MA TANTI ELEMENTI', pag:'pag. 53', color:'--verde', emo:'👥', scheme:scheme9, games:[
+      { id:'l9g1', title:'UN INSIEME DI…',        sub:'STORMO, GREGGE, SCIAME…',       emo:'🐑', run:gInsiemeDi },
+      { id:'l9g2', title:'COMPLETA LE DEFINIZIONI', sub:'ESERCITO, ORCHESTRA…',        emo:'🎻', run:gDefColl },
+      { id:'l9g3', title:'TROVA IL COLLETTIVO',   sub:'IN OGNI FRASE ENTRA UNO',       emo:'🔍', run:gTrovaColl } ] },
+    { id:'l10', n:10, title:'ORA IL MAESTRO SEI TU', sub:'VERIFICA FINALE', pag:'pag. 48', color:'--blunotte', emo:'🎓', scheme:scheme10, games:[
+      { id:'l10g1', title:'TRE NOMI SPECIFICI',   sub:'VESTITI, VERDURA, SPORT…',      emo:'📝', run:gTreSpecifici },
+      { id:'l10g2', title:'CACCIA AGLI ERRORI',   sub:'MAIUSCOLE E MINUSCOLE',         emo:'🔠', run:gMaiuscole },
+      { id:'l10g3', title:'LA TABELLA DEI NOMI',  sub:'GENERE E NUMERO',               emo:'📊', run:gTabella } ] }
+  ];
+  /* ================== MINIGIOCHI FINALI ================== */
+  function noAcc(s){ try{ return s.normalize('NFD').replace(/[̀-ͯ]/g, ''); }catch(e){ return s; } }
+
+  /* crucipuzzle: tocca la prima e l'ultima lettera di ogni parola */
+  function crucipuzzle(g, cfg){
+    var p = frame(g); var n = cfg.size, words = cfg.words.map(function(w){ return w.toUpperCase(); });
+    p.appendChild(el('div', 'intro', cfg.intro));
+    var dirs = [[0,1],[1,0],[1,1],[0,-1],[-1,0]]; if(cfg.easy) dirs = [[0,1],[1,0],[1,1]];
+    var grid = null;
+    for(var attempt = 0; attempt < 200 && !grid; attempt++){
+      var G = []; for(var i = 0; i < n; i++){ G.push([]); for(var j = 0; j < n; j++) G[i].push(''); }
+      var ok = true;
+      for(var wi = 0; wi < words.length && ok; wi++){
+        var w = words[wi], placed = false;
+        for(var t = 0; t < 300 && !placed; t++){
+          var d = dirs[Math.floor(Math.random() * dirs.length)], r0 = Math.floor(Math.random() * n), c0 = Math.floor(Math.random() * n);
+          var r1 = r0 + d[0] * (w.length - 1), c1 = c0 + d[1] * (w.length - 1);
+          if(r1 < 0 || r1 >= n || c1 < 0 || c1 >= n) continue;
+          var fit = true; for(var k = 0; k < w.length; k++){ var ch = G[r0 + d[0] * k][c0 + d[1] * k]; if(ch !== '' && ch !== w[k]){ fit = false; break; } }
+          if(!fit) continue;
+          for(var k2 = 0; k2 < w.length; k2++) G[r0 + d[0] * k2][c0 + d[1] * k2] = w[k2];
+          placed = true;
+        }
+        if(!placed) ok = false;
+      }
+      if(ok) grid = G;
+    }
+    var ABC = 'ABCDEFGHILMNOPQRSTUVZ';
+    for(var a = 0; a < n; a++) for(var b = 0; b < n; b++) if(grid[a][b] === '') grid[a][b] = ABC[Math.floor(Math.random() * ABC.length)];
+    var box = el('div', 'cw'); box.style.setProperty('--n', n); var cells = [];
+    for(var r = 0; r < n; r++){ cells.push([]); for(var c = 0; c < n; c++){
+      var cell = el('button', 'cw-cell'); cell.textContent = grid[r][c]; cell.dataset.r = r; cell.dataset.c = c; cell.setAttribute('aria-label', 'Lettera ' + grid[r][c]);
+      cells[r].push(cell); box.appendChild(cell);
+    } }
+    p.appendChild(box);
+    var list = el('div', 'cw-words'); var chips = {};
+    words.forEach(function(w){ var s = el('span', 'cw-word', w); chips[w] = s; list.appendChild(s); });
+    var fb = el('div', 'fb info'); fb.textContent = 'TROVATE: 0 / ' + words.length;
+    p.appendChild(list); p.appendChild(fb);
+    var start = null, found = 0; var COL = ['#209AAB','#E01760','#E7900C','#6AB77D','#D9B918','#1A2F4A'];
+    function line(a, b){
+      var dr = b.r - a.r, dc = b.c - a.c, len = Math.max(Math.abs(dr), Math.abs(dc));
+      if(len === 0 || (dr !== 0 && dc !== 0 && Math.abs(dr) !== Math.abs(dc))) return null;
+      var sr = Math.sign(dr), sc = Math.sign(dc), out = [];
+      for(var i = 0; i <= len; i++) out.push([a.r + sr * i, a.c + sc * i]);
+      return out;
+    }
+    box.addEventListener('click', function(e){
+      var t = e.target.closest ? e.target.closest('.cw-cell') : null; if(!t) return;
+      var pos = { r:+t.dataset.r, c:+t.dataset.c };
+      if(!start){ start = pos; t.classList.add('start'); return; }
+      if(start.r === pos.r && start.c === pos.c){ t.classList.remove('start'); start = null; return; }
+      cells[start.r][start.c].classList.remove('start');
+      var ln = line(start, pos); start = null;
+      if(!ln){ fb.className = 'fb no'; fb.textContent = 'LE LETTERE DEVONO STARE IN LINEA RETTA: RIPROVA!'; return; }
+      var txt = ln.map(function(x){ return grid[x[0]][x[1]]; }).join(''), rev = txt.split('').reverse().join(''), hit = null;
+      words.forEach(function(w){ if(!chips[w].classList.contains('done') && (w === txt || w === rev)) hit = w; });
+      if(hit){
+        var col = COL[found % COL.length]; chips[hit].classList.add('done'); found++;
+        ln.forEach(function(x){ var cc = cells[x[0]][x[1]]; cc.classList.add('found'); cc.style.background = col; cc.style.borderColor = col; });
+        fb.className = 'fb ok'; fb.textContent = 'TROVATA: ' + hit + '! (' + found + ' / ' + words.length + ')';
+        if(found === words.length) reward(p, g, cfg.ok);
+      } else {
+        ln.forEach(function(x){ var cc = cells[x[0]][x[1]]; cc.classList.add('shake'); setTimeout(function(){ cc.classList.remove('shake'); }, 450); });
+        fb.className = 'fb no'; fb.textContent = 'NON È UNA DELLE PAROLE: RIPROVA!';
+      }
+    });
+  }
+
+  /* domino: ogni tessera comincia con il compagno della parola a destra della catena */
+  function dominoGame(g, cfg){
+    var p = frame(g);
+    p.appendChild(el('div', 'intro', cfg.intro));
+    var chain = el('div', 'dom-chain'); var ask = el('div', 'fb info'); var pool = el('div', 'dom-pool'); var fb = el('div', 'fb');
+    function tile(t, tag){ var d = el(tag, 'dom'); d.innerHTML = '<span>' + t[0] + '</span><span>' + t[1] + '</span>'; return d; }
+    var first = cfg.tiles[0]; var end = first[1];
+    var f = tile(first, 'div'); f.classList.add('fixed'); chain.appendChild(f);
+    function upd(){ ask.textContent = cfg.ask(end); }
+    var left = cfg.tiles.length - 1;
+    shuffle(cfg.tiles.slice(1)).forEach(function(t){
+      var b = tile(t, 'button'); b.dataset.l = t[0];
+      b.addEventListener('click', function(){
+        if(t[0] === cfg.partner[end]){
+          b.classList.add('fixed'); b.disabled = true; chain.appendChild(b); end = t[1]; left--; fb.className = 'fb ok'; fb.textContent = 'LA TESSERA VA BENE!'; upd();
+          if(left === 0){ ask.textContent = ''; reward(p, g, cfg.ok); }
+        } else { b.classList.add('ko'); setTimeout(function(){ b.classList.remove('ko'); }, 450); fb.className = 'fb no'; fb.textContent = 'NON È QUELLA GIUSTA: RIFLETTI E RIPROVA!'; }
+      });
+      pool.appendChild(b);
+    });
+    upd();
+    p.appendChild(chain); p.appendChild(ask); p.appendChild(pool); p.appendChild(fb);
+  }
+
+  /* puzzle della frase: scambia le tessere finché la frase è in ordine */
+  function swapPuzzle(g, cfg){
+    var p = frame(g); p.appendChild(el('div', 'intro', cfg.intro));
+    var n = cfg.chunks.length, order = cfg.chunks.map(function(_, i){ return i; });
+    var tries = 0; do { order = shuffle(order); tries++; } while(tries < 50 && order.every(function(v, i){ return v === i; }));
+    var box = el('div', 'swp'); var sel = null; var btns = [];
+    var fb = el('div', 'fb info');
+    function paint(){
+      var okc = 0;
+      btns.forEach(function(b, i){ b.textContent = cfg.chunks[order[i]]; var good = order[i] === i; b.classList.toggle('ok', good); b.disabled = good; if(good) okc++; });
+      fb.textContent = 'TESSERE AL POSTO GIUSTO: ' + okc + ' / ' + n;
+      return okc === n;
+    }
+    for(var i = 0; i < n; i++){ (function(i){
+      var b = el('button'); b.addEventListener('click', function(){
+        if(sel === null){ sel = i; b.classList.add('sel'); return; }
+        if(sel === i){ b.classList.remove('sel'); sel = null; return; }
+        var t = order[sel]; order[sel] = order[i]; order[i] = t; btns[sel].classList.remove('sel'); sel = null;
+        if(paint()){ fb.className = 'fb ok'; fb.textContent = 'LA FRASE È COMPLETA!'; reward(p, g, cfg.ok); }
+      });
+      btns.push(b); box.appendChild(b);
+    })(i); }
+    paint(); p.appendChild(box); p.appendChild(fb);
+  }
+
+  /* indovinelli: scrivi la risposta */
+  function riddleGame(g, cfg){
+    var p = frame(g); p.appendChild(el('div', 'intro', cfg.intro));
+    var host = el('div'); p.appendChild(host); var idx = 0;
+    function render(){
+      host.innerHTML = ''; var it = cfg.items[idx], tries = 0, fin = false;
+      var dots = el('div', 'dots'); cfg.items.forEach(function(_, i){ dots.appendChild(el('div', 'dot' + (i < idx ? ' on' : (i === idx ? ' cur' : '')))); }); host.appendChild(dots);
+      var task = el('div', 'task'); task.appendChild(el('div', 'qline', '🧠 ' + it.r));
+      var row = el('div', 'rid'); var inp = el('input'); inp.type = 'text'; inp.maxLength = 30; inp.placeholder = 'SCRIVI LA RISPOSTA…'; inp.setAttribute('aria-label', 'Risposta'); inp.autocomplete = 'off';
+      var ck = el('button', 'btn rosa', '✔ CONTROLLA'); var hb = el('button', 'btn ghost', '💡 INDIZIO');
+      row.appendChild(inp); row.appendChild(ck); row.appendChild(hb); task.appendChild(row);
+      var fb = el('div', 'fb'); task.appendChild(fb); host.appendChild(task);
+      function finish(msg){
+        fin = true; inp.disabled = true; ck.disabled = true; hb.disabled = true; fb.className = 'fb ok'; fb.innerHTML = msg;
+        var nb = el('button', 'btn rosa', idx < cfg.items.length - 1 ? 'AVANTI ➜' : 'FINITO!');
+        nb.addEventListener('click', function(){ if(idx < cfg.items.length - 1){ idx++; render(); } else { nb.disabled = true; reward(p, g, cfg.ok); } });
+        task.appendChild(nb);
+      }
+      function check(){
+        if(fin) return; var v = noAcc(norm(inp.value)); if(!v) return;
+        if(it.a.some(function(a){ return noAcc(norm(a)) === v; })) finish('ESATTO! LA RISPOSTA È <b>' + U(it.a[0]) + '</b>.');
+        else { tries++; if(tries >= 3){ finish('LA RISPOSTA ERA <b>' + U(it.a[0]) + '</b>. LA PROSSIMA VOLTA CI RIUSCITE!'); } else { fb.className = 'fb no'; fb.textContent = 'NON È QUESTA: RIFLETTETE INSIEME E RIPROVATE! (' + tries + '/3)'; } }
+      }
+      ck.addEventListener('click', check); inp.addEventListener('keydown', function(e){ if(e.key === 'Enter'){ e.preventDefault(); check(); } });
+      hb.addEventListener('click', function(){ fb.className = 'fb info'; fb.textContent = '💡 ' + it.h; });
+    }
+    render();
+  }
+
+  var FINALS = [
+    { title:'CRUCIPUZZLE DEI NOMI',       sub:'SFIDA FINALE · TROVA I NOMI NASCOSTI', emo:'🧩', run:function(g){ crucipuzzle(g, { size:8, easy:true, words:['gatto','maestra','libro','nonno','pesce','tavolo'],
+        intro:'<b>SFIDA FINALE!</b> NELLA GRIGLIA SONO NASCOSTI <b>SEI NOMI</b> (PERSONE, ANIMALI, COSE). TOCCA LA <b>PRIMA</b> E POI L’<b>ULTIMA</b> LETTERA DI OGNI NOME.', ok:'AVETE TROVATO TUTTI I NOMI NASCOSTI!' }); } },
+    { title:'INDOVINELLI',                sub:'SFIDA FINALE · CHI SONO?', emo:'🧠', run:function(g){ riddleGame(g, { intro:'<b>SFIDA FINALE!</b> LEGGETE L’INDOVINELLO E SCRIVETE IL <b>NOME GENERICO</b> GIUSTO. POTETE USARE L’INDIZIO!', ok:'AVETE RISOLTO TUTTI GLI INDOVINELLI!', items:[
+        { r:'DENTRO DI ME CI SONO IL CANE, IL GATTO E IL CAVALLO. COME MI CHIAMO?', a:['animali'], h:'SONO TUTTI ESSERI VIVENTI CHE NON SONO PIANTE NÉ PERSONE.' },
+        { r:'NELLA MIA CESTA CI SONO MELA, PERA E BANANA. CHI SONO?', a:['frutta','frutti'], h:'SI MANGIA E CRESCE SUGLI ALBERI.' },
+        { r:'MAGLIA, PANTALONI E CALZE STANNO NEL MIO ARMADIO. CHI SONO?', a:['vestiti','abiti','vestiario'], h:'SI INDOSSANO.' },
+        { r:'PENNA, MATITA E PENNARELLO STANNO NEL MIO ASTUCCIO. COME MI CHIAMO?', a:['cancelleria','materiale scolastico'], h:'COMINCIA CON LA C: SI TROVA NEI NEGOZI DI CARTA E PENNE.' } ] }); } },
+    { title:'IL DOMINO',                  sub:'SFIDA FINALE · MASCHILE E FEMMINILE', emo:'🎲', run:function(g){ dominoGame(g, {
+        intro:'<b>SFIDA FINALE!</b> COSTRUISCI LA CATENA DEL DOMINO: TOCCA LA TESSERA CHE COMINCIA CON IL <b>FEMMINILE</b> (O IL MASCHILE) DELLA PAROLA A DESTRA.',
+        tiles:[['INIZIO','alunno'],['alunna','cuoco'],['cuoca','figlio'],['figlia','sposo'],['sposa','gallo'],['gallina','re'],['regina','FINE']],
+        partner:{ alunno:'alunna', cuoco:'cuoca', figlio:'figlia', sposo:'sposa', gallo:'gallina', re:'regina' },
+        ask:function(w){ return 'CERCA LA TESSERA CHE COMINCIA CON IL COMPAGNO DI «' + U(w) + '»'; }, ok:'LA CATENA DEL DOMINO È COMPLETA!' }); } },
+    { title:'IL PUZZLE DELLA FRASE',      sub:'SFIDA FINALE · RIMETTI IN ORDINE', emo:'🖼️', run:function(g){ swapPuzzle(g, {
+        intro:'<b>SFIDA FINALE!</b> LE TESSERE SONO MISCHIATE. TOCCA DUE TESSERE PER SCAMBIARLE E RIMETTI IN ORDINE LA FRASE (SI LEGGE DALL’ALTO IN BASSO, DA SINISTRA A DESTRA).',
+        chunks:['AL PLURALE','CAMBIANO','L’ARTICOLO','E','LA FINE','DEL NOME','TRANNE','I NOMI','INVARIABILI'], ok:'«AL PLURALE CAMBIANO L’ARTICOLO E LA FINE DEL NOME, TRANNE I NOMI INVARIABILI.»' }); } },
+    { title:'INDOVINELLI ASTRATTI',       sub:'SFIDA FINALE · NON SI VEDONO, MA SI SENTONO', emo:'🔮', run:function(g){ riddleGame(g, { intro:'<b>SFIDA FINALE!</b> SONO <b>NOMI ASTRATTI</b>: NON SI VEDONO E NON SI TOCCANO. INDOVINA QUALE!', ok:'AVETE INDOVINATO TUTTI I NOMI ASTRATTI!', items:[
+        { r:'NON MI PUOI TOCCARE NÉ VEDERE, MA MI SENTI NEL CUORE QUANDO HAI UN VERO COMPAGNO DI GIOCHI. CHI SONO?', a:['amicizia'], h:'COMINCIA CON AM…' },
+        { r:'TI FACCIO TREMARE QUANDO C’È IL BUIO E SENTI UN RUMORE STRANO. CHI SONO?', a:['paura'], h:'È UN’EMOZIONE DI CINQUE LETTERE.' },
+        { r:'SONO QUELLO CHE PROVI QUANDO RIDI TANTO E TUTTO VA BENE. CHI SONO?', a:['felicità','allegria','gioia','contentezza'], h:'È L’OPPOSTO DELLA TRISTEZZA.' },
+        { r:'CHI MI HA NON SCAPPA QUANDO C’È UN PERICOLO, ANCHE SE HA UN PO’ DI PAURA. CHI SONO?', a:['coraggio'], h:'I SUPEREROI NE HANNO TANTO.' } ] }); } },
+    { title:'IL DOMINO DELLE FAMIGLIE',   sub:'SFIDA FINALE · PRIMITIVI E DERIVATI', emo:'🎲', run:function(g){ dominoGame(g, {
+        intro:'<b>SFIDA FINALE!</b> TOCCA LA TESSERA CHE COMINCIA CON IL <b>DERIVATO</b> DELLA PAROLA PRIMITIVA A DESTRA.',
+        tiles:[['INIZIO','pane'],['panettiere','dente'],['dentista','libro'],['libraio','orto'],['ortolano','fiore'],['fioraio','FINE']],
+        partner:{ pane:'panettiere', dente:'dentista', libro:'libraio', orto:'ortolano', fiore:'fioraio' },
+        ask:function(w){ return 'CERCA LA TESSERA CHE COMINCIA CON UN DERIVATO DI «' + U(w) + '»'; }, ok:'LA CATENA DELLE FAMIGLIE È COMPLETA!' }); } },
+    { title:'CRUCIPUZZLE DEGLI ALTERATI', sub:'SFIDA FINALE · TROVA GLI ALTERATI', emo:'🔎', run:function(g){ crucipuzzle(g, { size:10, easy:true, words:['cagnone','gattino','scarpetta','libraccio','porticina','casone'],
+        intro:'<b>SFIDA FINALE!</b> NELLA GRIGLIA SONO NASCOSTI <b>SEI NOMI ALTERATI</b>. TOCCA LA PRIMA E POI L’ULTIMA LETTERA DI OGNUNO.', ok:'AVETE TROVATO TUTTI GLI ALTERATI!' }); } },
+    { title:'IL PUZZLE DELLA FRASE',      sub:'SFIDA FINALE · RIMETTI IN ORDINE', emo:'🖼️', run:function(g){ swapPuzzle(g, {
+        intro:'<b>SFIDA FINALE!</b> TOCCA DUE TESSERE PER SCAMBIARLE E RIMETTI IN ORDINE LA FRASE SUI NOMI COMPOSTI.',
+        chunks:['UN NOME','COMPOSTO','NASCE','DALL’UNIONE','DI DUE','PAROLE','CHE DIVENTANO','UNA','SOLA'], ok:'«UN NOME COMPOSTO NASCE DALL’UNIONE DI DUE PAROLE CHE DIVENTANO UNA SOLA.»' }); } },
+    { title:'IL DOMINO DEI COLLETTIVI',   sub:'SFIDA FINALE · UNO MA TANTI', emo:'🎲', run:function(g){ dominoGame(g, {
+        intro:'<b>SFIDA FINALE!</b> TOCCA LA TESSERA CHE COMINCIA CON <b>CHI FORMA</b> IL NOME COLLETTIVO A DESTRA (STORMO ➜ UCCELLI…).',
+        tiles:[['INIZIO','stormo'],['uccelli','gregge'],['pecore','sciame'],['api','esercito'],['soldati','orchestra'],['musicisti','FINE']],
+        partner:{ stormo:'uccelli', gregge:'pecore', sciame:'api', esercito:'soldati', orchestra:'musicisti' },
+        ask:function(w){ return 'CERCA LA TESSERA CHE COMINCIA CON CHI FORMA «' + U(w) + '»'; }, ok:'LA CATENA DEI COLLETTIVI È COMPLETA!' }); } },
+    { title:'CRUCIPUZZLE FINALE',         sub:'SFIDA FINALE · LE PAROLE DEI NOMI', emo:'🏆', run:function(g){ crucipuzzle(g, { size:10, easy:false, words:['nome','genere','numero','plurale','singolare','articolo'],
+        intro:'<b>GRANDE SFIDA FINALE!</b> TROVA LE SEI PAROLE CHE ABBIAMO IMPARATO. PUOI TROVARLE ANCHE <b>AL CONTRARIO</b> E IN DIAGONALE!', ok:'AVETE TROVATO TUTTE LE PAROLE: SIETE CAMPIONI DEI NOMI!' }); } }
+  ];
+  FINALS.forEach(function(f, i){ f.final = true; f.id = 'l' + (i + 1) + 'gF'; LV[i].games.push(f); });
+
+  var ALL = [];
+  LV.forEach(function(l){ l.games.forEach(function(g, i){ g.level = l; g.idx = i; g.n = l.n + '.' + (i + 1); ALL.push(g); }); });
+
+  function done(g){ return !!state.done[g.id]; }
+  function levelDone(l){ return l.games.every(done); }
+  function allDone(){ return ALL.every(done); }
+  function unlocked(l){ return !state.sequential || l.n === 1 || levelDone(LV[l.n - 2]); }
+  function othersDone(l){ return l.games.every(function(g){ return g.final || done(g); }); }
+  function nextUndoneInLevel(l, after){
+    for(var i = 1; i <= l.games.length; i++){ var g = l.games[(after + i) % l.games.length]; if(!done(g) && (!g.final || othersDone(l))) return g; }
+    return null;
+  }
+
+  /* ================== NAVIGAZIONE ================== */
+  function go(v, a){
+    stage.innerHTML = '';
+    if(v === 'home') renderHome();
+    else if(v === 'level') renderLevel(a);
+    else if(v === 'scheme') renderScheme(a.l, a.hub);
+    else if(v === 'schemes') renderSchemes();
+    else if(v === 'game') a.run(a);
+    else if(v === 'finish') renderFinish();
+    stage.scrollTop = 0;
+  }
+  function btnBack(label, fn){ var b = el('button', 'btn ghost', label); b.addEventListener('click', fn); return b; }
+
+  function frame(g){
+    var p = el('div', 'panel'); var top = el('div', 'st-top');
+    top.appendChild(btnBack('⬅ LIVELLO ' + g.level.n, function(){ go('level', g.level); }));
+    var t = el('div', 'st-title'); t.innerHTML = '<span class="st-num" style="background:var(' + g.level.color + ')">' + g.n + '</span>' + g.title;
+    top.appendChild(t); p.appendChild(top); stage.appendChild(p); return p;
+  }
+
+  function reward(p, g, text){
+    if(!state.done[g.id]){ state.done[g.id] = true; save(); }
+    confetti();
+    var l = g.level, lvDone = levelDone(l);
+    var r = el('div', 'reward');
+    r.innerHTML = '<div class="reward-emo">' + (lvDone ? '🏅' : '⭐') + '</div><div class="reward-t">' + (lvDone ? 'LIVELLO ' + l.n + ' COMPLETATO!' : 'BRAVISSIMI!') + '</div><div class="reward-s">' + text + '</div>';
+    var a = el('div', 'actions'); a.style.justifyContent = 'center';
+    if(!lvDone){
+      var ng = nextUndoneInLevel(l, g.idx);
+      var b = el('button', 'btn rosa', 'GIOCO SUCCESSIVO ➜'); b.addEventListener('click', function(){ go('game', ng); }); a.appendChild(b);
+    } else if(allDone()){
+      var f = el('button', 'btn rosa', 'VAI ALLA FESTA 🎉'); f.addEventListener('click', function(){ go('finish'); }); a.appendChild(f);
+    } else if(l.n < LV.length){
+      var nl = LV[l.n]; var b2 = el('button', 'btn rosa', 'LIVELLO ' + nl.n + ' ➜'); b2.addEventListener('click', function(){ go('level', nl); }); a.appendChild(b2);
+    }
+    var h = el('button', 'btn ghost', 'TORNA AL LIVELLO'); h.addEventListener('click', function(){ go('level', l); });
+    a.appendChild(h); r.appendChild(a); p.appendChild(r); scrollTo(r);
+  }
+
+  /* ================== HOME ================== */
+  function starsRow(){
+    var row = el('div', 'stars-row'); var n = ALL.filter(done).length;
+    var sh = ''; ALL.forEach(function(g){ sh += '<span class="st' + (done(g) ? ' on' : '') + '">⭐</span>'; });
+    row.innerHTML = '<span class="lbl">LE TUE STELLE:</span>' + sh + '<span>' + n + ' / ' + ALL.length + '</span>';
+    return row;
+  }
+  function renderHome(){
+    var p = el('div', 'panel');
+    var hero = el('div', 'hero');
+    hero.innerHTML = '<div class="hero-emo">🚌</div><div><div class="hero-t">ALLENATI CON ME!</div><div class="hero-s">DIECI LIVELLI PER CONOSCERE I NOMI. OGNI LIVELLO COMINCIA CON UNO SCHEMA E FINISCE CON UNA SFIDA!</div></div>';
+    p.appendChild(hero); p.appendChild(starsRow());
+    var g = el('div', 'lvl-grid');
+    var cur = null; LV.forEach(function(l){ if(!cur && unlocked(l) && !levelDone(l)) cur = l; });
+    LV.forEach(function(l){
+      var open = unlocked(l), nd = l.games.filter(done).length;
+      var c = el('button', 'lvl-card' + (open ? '' : ' locked') + (cur === l ? ' next' : ''));
+      c.style.setProperty('--c', 'var(' + l.color + ')');
+      c.innerHTML = '<span class="badge"><small>LIV.</small><b>' + l.n + '</b></span><span class="emo">' + (open ? l.emo : '🔒') + '</span>' +
+        '<div class="tt">' + l.title + '</div><div class="ss">' + l.sub + ' &middot; ' + l.pag + '</div>' +
+        '<div class="pg">' + (open ? ('⭐ ' + nd + ' / ' + l.games.length + (nd === l.games.length ? ' &middot; COMPLETATO!' : '')) : 'FINISCI IL LIVELLO ' + (l.n - 1) + ' PER APRIRE QUESTO') + '</div>';
+      c.addEventListener('click', function(){ if(open) go('level', l); else toast('PRIMA FINISCI IL LIVELLO ' + (l.n - 1) + '!'); });
+      g.appendChild(c);
+    });
+    p.appendChild(g);
+    var sb = el('button', 'btn giallo', '📘 GUARDA TUTTI GLI SCHEMI'); sb.addEventListener('click', function(){ go('schemes'); });
+    var ac = el('div', 'actions'); ac.style.justifyContent = 'center'; ac.appendChild(sb); p.appendChild(ac);
+    stage.appendChild(p);
+  }
+
+  function renderLevel(l){
+    var p = el('div', 'panel'); var top = el('div', 'st-top');
+    top.appendChild(btnBack('⬅ HOME', function(){ go('home'); }));
+    var t = el('div', 'st-title'); t.innerHTML = '<span class="st-num" style="background:var(' + l.color + ')">LIV. ' + l.n + '</span>' + l.title;
+    top.appendChild(t); p.appendChild(top);
+    p.appendChild(el('div', 'intro', '<b>' + l.sub + '</b> &middot; ' + l.pag + '. PRIMA GUARDA LO SCHEMA, POI SCEGLI UN GIOCO.'));
+    if(levelDone(l)) p.appendChild(el('div', 'lvl-done', '🏅 LIVELLO COMPLETATO!'));
+    var grid = el('div', 'grid');
+    var sc = el('button', 'st-card scheme' + (state.seen[l.id] ? '' : ' next'));
+    sc.style.setProperty('--c', 'var(' + l.color + ')');
+    sc.innerHTML = '<span class="num">📘</span><div class="tt">LO SCHEMA</div><div class="ss">RIPASSA LA TEORIA DEL LIVELLO</div>' + (state.seen[l.id] ? '<span class="tick">✔️</span>' : '');
+    sc.addEventListener('click', function(){ go('scheme', { l:l, hub:false }); });
+    grid.appendChild(sc);
+    var nxt = state.seen[l.id] ? nextUndoneInLevel(l, -1) : null;
+    l.games.forEach(function(g){
+      var lockedF = g.final && !othersDone(l); var c = el('button', 'st-card' + (nxt === g ? ' next' : '') + (lockedF ? ' locked' : ''));
+      c.style.setProperty('--c', 'var(' + l.color + ')');
+      c.innerHTML = '<span class="num">' + g.n + '</span><span class="emo">' + (lockedF ? '🔒' : g.emo) + '</span><div class="tt">' + g.title + '</div><div class="ss">' + g.sub + '</div>' + (done(g) ? '<span class="tick">⭐</span>' : '');
+      c.addEventListener('click', function(){ if(lockedF){ toast('PRIMA FINISCI TUTTI GLI ALTRI GIOCHI!'); return; } go('game', g); });
+      grid.appendChild(c);
+    });
+    p.appendChild(grid); stage.appendChild(p);
+  }
+
+  function renderSchemes(){
+    var p = el('div', 'panel'); var top = el('div', 'st-top');
+    top.appendChild(btnBack('⬅ HOME', function(){ go('home'); }));
+    top.appendChild(el('div', 'st-title', '📘 I MIEI SCHEMI')); p.appendChild(top);
+    var grid = el('div', 'grid');
+    LV.forEach(function(l){
+      var c = el('button', 'st-card scheme'); c.style.setProperty('--c', 'var(' + l.color + ')');
+      c.innerHTML = '<span class="num">LIV. ' + l.n + '</span><span class="emo">' + l.emo + '</span><div class="tt">' + l.title + '</div><div class="ss">' + l.sub + '</div>';
+      c.addEventListener('click', function(){ go('scheme', { l:l, hub:true }); });
+      grid.appendChild(c);
+    });
+    p.appendChild(grid); stage.appendChild(p);
+  }
+
+  function renderScheme(l, hub){
+    var p = el('div', 'panel'); var top = el('div', 'st-top');
+    top.appendChild(btnBack(hub ? '⬅ SCHEMI' : '⬅ LIVELLO ' + l.n, function(){ go(hub ? 'schemes' : 'level', hub ? undefined : l); }));
+    var t = el('div', 'st-title'); t.innerHTML = '<span class="st-num" style="background:var(' + l.color + ')">LIV. ' + l.n + '</span>LO SCHEMA';
+    top.appendChild(t); p.appendChild(top);
+    var box = el('div', 'sch'); box.style.setProperty('--c', 'var(' + l.color + ')'); p.appendChild(box);
+    l.scheme(box);
+    var a = el('div', 'actions'); a.style.justifyContent = 'center';
+    var ok = el('button', 'btn rosa', hub ? 'HO CAPITO!' : 'HO CAPITO! ➜ AI GIOCHI');
+    ok.addEventListener('click', function(){ state.seen[l.id] = true; save(); go(hub ? 'schemes' : 'level', hub ? undefined : l); });
+    a.appendChild(ok); p.appendChild(a); stage.appendChild(p);
+  }
+
+  /* ================== SCHEMI ================== */
+  function scheme1(b){
+    b.innerHTML = '<div class="sch-title">I NOMI</div>' +
+      '<div class="sch-def">I <b>NOMI</b> SONO PAROLE CHE DANNO IL NOME A <b>PERSONE</b>, <b>ANIMALI</b> E <b>COSE</b>.</div>' +
+      '<div class="sch-hint">👉 TOCCA OGNI RIQUADRO PER VEDERE GLI ESEMPI</div>';
+    var cols = el('div', 'sch-cols');
+    [ { c:'--turchese', ch:'CHI È?',      emo:'👧👦', nm:'PERSONA', ex:['Elena','gli amici','il nonno'] },
+      { c:'--rosa',     ch:'CHI È?',      emo:'🐱🦋', nm:'ANIMALE', ex:['il gatto','la farfalla','il cane'] },
+      { c:'--verde',    ch:'CHE COSA È?', emo:'🏠📖', nm:'COSA',    ex:['la casa','il libro','il tavolo'] } ].forEach(function(o){
+      var c = el('button', 'sch-col'); c.style.setProperty('--c', 'var(' + o.c + ')');
+      c.innerHTML = '<div class="ch">' + o.ch + '</div><div class="emo">' + o.emo + '</div><div class="nm">' + o.nm + '</div><div class="tap">TOCCA</div><div class="ex">' + o.ex.map(function(x){ return '<span class="xchip">' + x + '</span>'; }).join('') + '</div>';
+      c.addEventListener('click', function(){ c.classList.toggle('open'); });
+      cols.appendChild(c);
+    });
+    b.appendChild(cols);
+    b.appendChild(el('div', 'sch-def', '💡 <b>TRUCCO:</b> PER RICONOSCERE UN NOME MI CHIEDO <b>CHI È?</b> (PERSONE E ANIMALI) OPPURE <b>CHE COSA È?</b> (COSE).'));
+  }
+
+  function scheme2(b){
+    b.innerHTML = '<div class="sch-title">NOMI GENERICI E SPECIFICI</div>' +
+      '<div class="sch-legend">' +
+      '<div class="sch-leg" style="--c:var(--rosa)"><div class="tt">🧺 NOME GENERICO</div><div class="ss">SI RIFERISCE A UN <b>GRUPPO</b> DI ELEMENTI.</div></div>' +
+      '<div class="sch-leg" style="--c:var(--turchese)"><div class="tt">🔸 NOME SPECIFICO</div><div class="ss">SI RIFERISCE AGLI <b>ELEMENTI</b> DEL GRUPPO.</div></div></div>' +
+      '<div class="sch-hint">👉 TOCCA UN GRUPPO PER VEDERE I SUOI ELEMENTI</div>';
+    var tree = el('div', 'tree');
+    [ { c:'--rosa',     g:'ANIMALI',  kids:[['🐶','cane'],['🐱','gatto'],['🐴','cavallo']] },
+      { c:'--verde',    g:'VERDURE',  kids:[['🥕','carota'],['🍅','pomodoro'],['🥦','broccolo']] },
+      { c:'--arancio',  g:'VESTITI',  kids:[['👕','maglia'],['👖','pantaloni'],['🧦','calze']] } ].forEach(function(o){
+      var n = el('div', 'gnode'); n.style.setProperty('--c', 'var(' + o.c + ')');
+      var h = el('button', '', '<span>' + o.g + ' <small style="font-size:.6em;opacity:.9">(NOME GENERICO)</small></span><span>▾</span>');
+      var k = el('div', 'kids'); o.kids.forEach(function(x){ k.appendChild(el('div', 'kid', '<span class="big">' + x[0] + '</span><span class="xchip">' + x[1] + '</span>')); });
+      k.appendChild(el('div', 'sch-hint', 'NOMI SPECIFICI'));
+      h.addEventListener('click', function(){ n.classList.toggle('open'); });
+      n.appendChild(h); n.appendChild(k); tree.appendChild(n);
+    });
+    b.appendChild(tree);
+    b.appendChild(el('div', 'sch-def', '💡 <b>CANE, GATTO, CAVALLO</b> SONO NOMI SPECIFICI. <b>ANIMALI</b> È IL NOME GENERICO CHE LI COMPRENDE TUTTI.'));
+  }
+
+  function scheme4(b){
+    b.innerHTML = '<div class="sch-title">SINGOLARE E PLURALE</div>' +
+      '<div class="twobox">' +
+      '<div class="tbx" style="--c:var(--turchese)"><div class="tt">SINGOLARE</div><div class="sub">UNO &middot; UNA</div><div class="emo">🐱</div><div class="xchip">il gatto</div></div>' +
+      '<div class="tbx" style="--c:var(--rosa)"><div class="tt">PLURALE</div><div class="sub">TANTI &middot; TANTE</div><div class="emo">🐱🐱🐱</div><div class="xchip">i gatti</div></div></div>' +
+      '<div class="sch-def">IL NOME PUÒ INDICARE <b>UNO SOLO</b> (SINGOLARE) OPPURE <b>TANTI</b> (PLURALE).</div>' +
+      '<div class="sch-hint">GLI ARTICOLI CAMBIANO INSIEME AL NOME</div>';
+    var tab = el('div', 'atab');
+    [ ['IL','I','il gatto ➜ i gatti'], ['LO','GLI','lo zaino ➜ gli zaini'], ['LA','LE','la casa ➜ le case'], ["L'",'GLI / LE',"l'amico ➜ gli amici · l'amica ➜ le amiche"] ].forEach(function(r){
+      tab.appendChild(el('div', 'a s', r[0])); tab.appendChild(el('div', 'ar', '➜')); tab.appendChild(el('div', 'a p', r[1]));
+      tab.appendChild(el('div', 'eg', r[2]));
+    });
+    b.appendChild(tab);
+    b.appendChild(el('div', 'two-change', '<span>AL PLURALE CAMBIANO:</span><span class="box" style="background:var(--turchese)">L’ARTICOLO</span><span>+</span><span class="box" style="background:var(--rosa)">LA FINE DEL NOME</span>'));
+    b.appendChild(el('div', 'sch-def', '🔎 <b>COME CAMBIA LA FINE?</b> LO SCOPRI NEL GIOCO 4.3. E ATTENZIONE: <b>ALCUNI NOMI NON CAMBIANO</b>! LI TROVI NEL GIOCO 4.5.'));
+    b.appendChild(el('div', 'sch-def', '⚠️ <b>CON I SUONI DURI:</b> -CA ➜ -CHE E -GA ➜ -GHE (AMICA ➜ AMICHE, RIGA ➜ RIGHE). MOLTI NOMI IN -CO E -GO FANNO -CHI E -GHI (FUNGO ➜ FUNGHI, MAGO ➜ MAGHI). SPIAGGIA ➜ SPIAGGE.'));
+  }
+
+  /* ================== MOTORI DI GIOCO ================== */
+  function cleanW(w){ return w.replace(/[^A-Za-zÀ-ÿ']/g, '').toLowerCase(); }
+
+  /* caccia ai nomi nel testo */
+  function huntGame(g, cfg){
+    var p = frame(g);
+    p.appendChild(el('div', 'intro', cfg.intro));
+    p.appendChild(el('div', 'hint', cfg.hint));
+    var card = el('div', 'text-card'); var spans = [];
+    cfg.text.split(' ').forEach(function(tok){
+      var m = tok.match(/^(.*?)([:,.;]*)$/); var word = m[1], punct = m[2];
+      var s = el('span', 'w'); s.textContent = word; s.tabIndex = 0; s.setAttribute('role', 'button');
+      s.dataset.n = cfg.nouns.indexOf(cleanW(word)) >= 0 ? '1' : '0';
+      function tog(){ if(s.classList.contains('good') || s.classList.contains('bad')){ s.classList.remove('good', 'bad'); return; } s.classList.toggle('sel'); }
+      s.addEventListener('click', tog);
+      s.addEventListener('keydown', function(e){ if(e.key === 'Enter' || e.key === ' '){ e.preventDefault(); tog(); } });
+      spans.push(s); card.appendChild(s);
+      if(punct){ var pn = el('span', 'pn'); pn.textContent = punct; card.appendChild(pn); }
+      card.appendChild(document.createTextNode(' '));
+    });
+    p.appendChild(card);
+    var fb = el('div', 'fb'); var acts = el('div', 'actions');
+    var ck = el('button', 'btn rosa', '✔ CONTROLLA');
+    var ls = el('button', 'btn ghost', '🔊 ASCOLTA IL TESTO');
+    var rs = el('button', 'btn ghost', '↺ RICOMINCIA');
+    ls.addEventListener('click', function(){ speak(cfg.text); });
+    rs.addEventListener('click', function(){ spans.forEach(function(s){ s.classList.remove('sel', 'good', 'bad'); }); fb.className = 'fb'; fb.textContent = ''; });
+    acts.appendChild(ck); acts.appendChild(ls); acts.appendChild(rs); p.appendChild(acts); p.appendChild(fb);
+    ck.addEventListener('click', function(){
+      var ok = 0, wrong = 0, miss = 0;
+      spans.forEach(function(s){
+        var isN = s.dataset.n === '1', sel = s.classList.contains('sel') || s.classList.contains('good');
+        s.classList.remove('good', 'bad');
+        if(sel && isN){ ok++; s.classList.remove('sel'); s.classList.add('good'); }
+        else if(sel && !isN){ wrong++; s.classList.remove('sel'); s.classList.add('bad'); }
+        else if(!sel && isN){ miss++; }
+      });
+      if(wrong === 0 && miss === 0){
+        fb.className = 'fb ok'; fb.textContent = 'HAI TROVATO TUTTI I ' + ok + ' NOMI!';
+        ck.disabled = true; reward(p, g, cfg.ok);
+      } else {
+        fb.className = 'fb no';
+        fb.textContent = 'NOMI TROVATI: ' + ok + (wrong ? ' · ' + wrong + ' NON ' + (wrong === 1 ? 'È UN NOME' : 'SONO NOMI') : '') + (miss ? ' · ANCORA DA TROVARE: ' + miss : '') + '. RILEGGI E RIPROVA!';
+      }
+    });
+  }
+
+  /* smistamento in contenitori (trascina o tocca) */
+  function sortGame(g, cfg){
+    var p = frame(g);
+    p.appendChild(el('div', 'intro', cfg.intro)); p.appendChild(el('div', 'hint', cfg.hint));
+    var pool = el('div', 'pool'); var bins = el('div', 'bins'); bins.style.gridTemplateColumns = 'repeat(' + cfg.bins.length + ',1fr)';
+    var binEls = cfg.bins.map(function(b){
+      var e = el('div', 'bin'); e.dataset.t = b.t; e.style.setProperty('--c', b.color); e.tabIndex = 0; e.setAttribute('role', 'button');
+      e.innerHTML = '<div class="bin-h">' + b.title + '<small>' + b.sub + '</small></div><div class="bin-b"></div>'; bins.appendChild(e); return e;
+    });
+    var fb = el('div', 'fb'); var counter = el('div', 'fb info'); var placed = 0, selected = null;
+    function upd(){ counter.textContent = 'POSTO GIUSTO: ' + placed + ' / ' + cfg.items.length; }
+    function attempt(chip, bin){
+      if(chip.dataset.t === bin.dataset.t){
+        chip.classList.remove('selected', 'dragging'); chip.classList.add('placed'); chip.disabled = true;
+        bin.querySelector('.bin-b').appendChild(chip); placed++; selected = null;
+        fb.className = 'fb ok'; fb.textContent = 'ESATTO!'; upd();
+        if(placed === cfg.items.length){ if(cfg.after) cfg.after(p, binEls); reward(p, g, cfg.ok); }
+      } else {
+        chip.classList.remove('dragging'); chip.classList.add('shake'); setTimeout(function(){ chip.classList.remove('shake'); }, 450);
+        fb.className = 'fb no'; fb.textContent = cfg.wrong(chip.textContent, bin.dataset.t);
+      }
+    }
+    function select(c){ if(selected) selected.classList.remove('selected'); selected = (selected === c) ? null : c; if(selected) selected.classList.add('selected'); }
+    binEls.forEach(function(b){
+      b.addEventListener('click', function(){ if(selected) attempt(selected, b); });
+      b.addEventListener('keydown', function(e){ if((e.key === 'Enter' || e.key === ' ') && selected){ e.preventDefault(); attempt(selected, b); } });
+    });
+    shuffle(cfg.items).forEach(function(it){
+      var c = el('button', 'chip'); c.textContent = it.w; c.dataset.t = it.t; var d = null;
+      c.addEventListener('pointerdown', function(e){ if(c.classList.contains('placed')) return; d = { x:e.clientX, y:e.clientY, moved:false, ghost:null }; try{ c.setPointerCapture(e.pointerId); }catch(er){} });
+      c.addEventListener('pointermove', function(e){
+        if(!d) return;
+        if(!d.moved && Math.abs(e.clientX - d.x) + Math.abs(e.clientY - d.y) > 8){ d.moved = true; c.classList.add('dragging'); d.ghost = c.cloneNode(true); d.ghost.className = 'chip ghost-chip'; document.body.appendChild(d.ghost); }
+        if(d.moved){ d.ghost.style.left = e.clientX + 'px'; d.ghost.style.top = e.clientY + 'px'; }
+      });
+      function end(e, cancel){
+        if(!d) return; var dd = d; d = null; if(dd.ghost) dd.ghost.remove();
+        if(dd.moved){ c.classList.remove('dragging'); if(!cancel){ var t = document.elementFromPoint(e.clientX, e.clientY); var b = t && t.closest ? t.closest('.bin') : null; if(b) attempt(c, b); } }
+        else if(!cancel){ select(c); }
+      }
+      c.addEventListener('pointerup', function(e){ end(e, false); });
+      c.addEventListener('pointercancel', function(e){ end(e, true); });
+      c.addEventListener('keydown', function(e){ if(e.key === 'Enter' || e.key === ' '){ e.preventDefault(); select(c); } });
+      pool.appendChild(c);
+    });
+    p.appendChild(pool); p.appendChild(bins); p.appendChild(counter); p.appendChild(fb); upd();
+  }
+
+  /* collega a coppie: tocca a sinistra e a destra */
+  var PCOL = ['#209AAB', '#E01760', '#E7900C', '#6AB77D', '#D9B918'];
+  function pairGame(host, pairs, extras, onDone){
+    var wrap = el('div', 'pairs-game'); var L = el('div', 'pcol'), R = el('div', 'pcol');
+    var sel = null, matched = 0; var fb = el('div', 'fb');
+    function pick(side, node, id){
+      if(node.classList.contains('done')) return;
+      if(sel && sel.side === side){ sel.node.classList.remove('sel'); if(sel.node === node){ sel = null; return; } sel = { side:side, node:node, id:id }; node.classList.add('sel'); return; }
+      if(!sel){ sel = { side:side, node:node, id:id }; node.classList.add('sel'); return; }
+      var a = sel; sel = null; a.node.classList.remove('sel');
+      if(a.id !== null && id !== null && a.id === id){
+        var col = PCOL[matched % PCOL.length]; [a.node, node].forEach(function(n){ n.classList.add('done'); n.style.borderColor = col; });
+        matched++; fb.className = 'fb ok'; fb.textContent = 'COPPIA GIUSTA!';
+        if(matched === pairs.length) onDone();
+      } else {
+        [a.node, node].forEach(function(n){ n.classList.add('ko'); setTimeout(function(){ n.classList.remove('ko'); }, 450); });
+        fb.className = 'fb no'; fb.textContent = 'NON VANNO INSIEME: RIPROVA!';
+      }
+    }
+    pairs.forEach(function(pr){
+      var c = el('button', 'pcard', pr.left); c.addEventListener('click', function(){ pick('L', c, pr.id); }); L.appendChild(c);
+    });
+    var rights = shuffle(pairs.map(function(pr){ return { id:pr.id, t:pr.right }; }).concat((extras || []).map(function(t){ return { id:null, t:t }; })));
+    rights.forEach(function(o){
+      var c = el('button', 'pcard'); c.textContent = o.t; c.addEventListener('click', function(){ pick('R', c, o.id); }); R.appendChild(c);
+    });
+    wrap.appendChild(L); wrap.appendChild(R); host.appendChild(wrap); host.appendChild(fb);
+  }
+
+  /* motore articolo + nome */
+  function runItems(host, items, onDone){
+    var idx = 0;
+    function render(){
+      host.innerHTML = ''; var it = items[idx];
+      var dots = el('div', 'dots'); items.forEach(function(_, i){ dots.appendChild(el('div', 'dot' + (i < idx ? ' on' : (i === idx ? ' cur' : '')))); });
+      host.appendChild(dots);
+      var task = el('div', 'task'); task.appendChild(el('div', 'task-dir', it.dir));
+      var q = el('div', 'task-q'); var sa = el('span', 'slot', '?'), sn = el('span', 'slot', '?');
+      q.appendChild(el('span', 'src', U(it.prompt))); q.appendChild(el('span', 'arr', '➜')); q.appendChild(sa); q.appendChild(sn); task.appendChild(q);
+      var gotA = false, gotN = false; var fb = el('div', 'fb');
+      function maybeDone(){
+        if(gotA && gotN){
+          fb.className = 'fb ok'; fb.textContent = 'BENISSIMO!';
+          var b = el('button', 'btn rosa', idx < items.length - 1 ? 'PROSSIMA PAROLA ➜' : 'FINITO!');
+          b.addEventListener('click', function(){ if(idx < items.length - 1){ idx++; render(); } else { onDone(); b.disabled = true; } });
+          task.appendChild(b);
+        }
+      }
+      function group(title, opts, correct, slot, isArt){
+        task.appendChild(el('div', 'opts-t', title)); var box = el('div', 'opts');
+        shuffle(opts).forEach(function(o){
+          var b = el('button', 'opt-btn'); b.textContent = U(o);
+          b.addEventListener('click', function(){
+            if(slot.classList.contains('full')) return;
+            if(o.toLowerCase() === correct.toLowerCase()){
+              b.classList.add('ok'); slot.textContent = U(o); slot.classList.add('full');
+              Array.prototype.forEach.call(box.children, function(x){ x.disabled = true; });
+              if(isArt) gotA = true; else gotN = true; fb.className = 'fb ok'; fb.textContent = 'GIUSTO!'; maybeDone();
+            } else { b.classList.add('ko'); setTimeout(function(){ b.classList.remove('ko'); }, 450); fb.className = 'fb no'; fb.textContent = 'RIFLETTETE INSIEME E RIPROVATE!'; }
+          });
+          box.appendChild(b);
+        });
+        task.appendChild(box);
+      }
+      group('1. SCEGLI L’ARTICOLO', it.artOpts, it.art, sa, true);
+      group('2. SCEGLI IL NOME', it.nounOpts, it.noun, sn, false);
+      task.appendChild(fb); host.appendChild(task);
+    }
+    render();
+  }
+
+  /* ================== LIVELLO 1 ================== */
+  var ELENA = 'Elena ha invitato a casa sua gli amici per la merenda. Ha preparato: una crostata alla marmellata, i biscotti al cioccolato, un vassoio di pizzette e un ottimo tè caldo al limone. Sul tavolo c’erano: la tovaglia, i tovaglioli, i piatti e i bicchieri colorati. Gli amici hanno regalato a Elena un libro sui gatti.';
+  var ELENA_N = ['elena','casa','amici','merenda','crostata','marmellata','biscotti','cioccolato','vassoio','pizzette','tè','limone','tavolo','tovaglia','tovaglioli','piatti','bicchieri','libro','gatti'];
+
+  function gHunt1(g){
+    huntGame(g, { text:ELENA.replace(/’/g, "'"), nouns:ELENA_N,
+      intro:'<b>1.</b> LEGGI IL TESTO E TOCCA <b>I NOMI</b>: SI SOTTOLINEANO! POI TOCCA <b>CONTROLLA</b>.',
+      hint:'💡 UN NOME DICE <b>CHI</b> O <b>CHE COSA</b> C&rsquo;&Egrave;: PERSONE, ANIMALI, COSE. ATTENZIONE: &ldquo;COLORATI&rdquo; E &ldquo;CALDO&rdquo; NON SONO NOMI!',
+      ok:'AVETE TROVATO TUTTI I NOMI NEL TESTO DI ELENA.' });
+  }
+
+  function gMatch1(g){
+    var p = frame(g);
+    p.appendChild(el('div', 'intro', '<b>2.</b> OGNI NOME DEL TESTO &Egrave; DISEGNATO. <b>TOCCA UN DISEGNO E POI LA PAROLA GIUSTA</b> (O VICEVERSA).'));
+    var host = el('div'); p.appendChild(host);
+    var data = [ ['casa','🏠'], ['amici','👧👦'], ['crostata','🥧'], ['biscotti','🍪'], ['pizzette','🍕'], ['tè','🍵'], ['piatti','🍽️'], ['bicchieri','🥛'], ['libro','📖'], ['gatti','🐈'] ];
+    pairGame(host, shuffle(data).map(function(d){ return { id:d[0], left:'<span class="big">' + d[1] + '</span>', right:d[0] }; }), [], function(){ reward(p, g, 'OGNI NOME HA TROVATO IL SUO DISEGNO.'); });
+  }
+
+  function gSort1(g){
+    sortGame(g, {
+      intro:'<b>3.</b> <b>IN COPPIA:</b> TRASCINATE OGNI NOME NELLA COLONNA GIUSTA: PERSONA, ANIMALE O COSA. OPPURE <b>TOCCATE</b> IL NOME E POI LA COLONNA.',
+      hint:'💡 <b>CHI &Egrave;?</b> PERSONA O ANIMALE. <b>CHE COSA &Egrave;?</b> COSA.',
+      items:[ {w:'Elena',t:'p'},{w:'amici',t:'p'},{w:'maestra',t:'p'},{w:'nonno',t:'p'},
+              {w:'gatti',t:'a'},{w:'cane',t:'a'},{w:'farfalla',t:'a'},{w:'pesce',t:'a'},
+              {w:'libro',t:'c'},{w:'tavolo',t:'c'},{w:'piatti',t:'c'},{w:'biscotti',t:'c'} ],
+      bins:[ {t:'p',title:'PERSONA',sub:'CHI È?',color:'#209AAB'}, {t:'a',title:'ANIMALE',sub:'CHI È?',color:'#E01760'}, {t:'c',title:'COSA',sub:'CHE COSA È?',color:'#6AB77D'} ],
+      wrong:function(w){ return 'PENSATECI: ' + U(w) + ' È UNA PERSONA, UN ANIMALE O UNA COSA?'; },
+      ok:'AVETE SMISTATO TUTTI I NOMI. ORA PROVATE A SCRIVERNE ALTRI!',
+      after:function(p, binEls){
+        var box = el('div', 'addown');
+        box.appendChild(el('div', 'intro', '✏️ <b>TOCCA A VOI!</b> SCRIVETE UN ALTRO NOME E SCEGLIETE LA COLONNA: PERSONA, ANIMALE O COSA.'));
+        var inp = el('input'); inp.type = 'text'; inp.maxLength = 24; inp.placeholder = 'SCRIVI UN NOME…'; inp.setAttribute('aria-label', 'Scrivi un nome'); box.appendChild(inp);
+        var row = el('div', 'row');
+        [ ['PERSONA','--turchese',0], ['ANIMALE','--rosa',1], ['COSA','--verde',2] ].forEach(function(o){
+          var b = el('button', 'btn', '+ ' + o[0]); b.style.background = 'var(' + o[1] + ')';
+          b.addEventListener('click', function(){
+            var v = inp.value.trim(); if(!v){ toast('PRIMA SCRIVI UN NOME!'); return; }
+            var c = el('span', 'chip placed'); c.textContent = v; binEls[o[2]].querySelector('.bin-b').appendChild(c); inp.value = ''; inp.focus();
+          });
+          row.appendChild(b);
+        });
+        box.appendChild(row); p.appendChild(box);
+      } });
+  }
+
+  /* ================== LIVELLO 2 ================== */
+  var SETS = [
+    { grp:'dei dolci',     color:'#E01760', given:true,
+      items:[ ['torta','🎂'], ['gelato','🍦'], ['caramelle','🍬'] ], pre:'La torta, il gelato e le caramelle', distr:[] },
+    { grp:'della frutta',  color:'#E7900C', given:false,
+      items:[ ['banana','🍌'], ['mela','🍎'], ['pera','🍐'] ], pre:'La banana, la mela e la pera', distr:['torta'] },
+    { grp:'dei giocattoli',color:'#209AAB', given:false,
+      items:[ ['palla','⚽'], ['macchinina','🚗'], ['bambola','🪆'] ], pre:'La palla, la macchinina e la bambola', distr:['pera'] }
+  ];
+  function gSets(g){
+    var p = frame(g);
+    p.appendChild(el('div', 'intro', '<b>1.</b> OSSERVA GLI INSIEMI: <b>DAI UN NOME</b> AGLI ELEMENTI E POI <b>AL GRUPPO</b>. ALLA FINE COMPLETI LA FRASE!'));
+    var host = el('div'); p.appendChild(host); var r = 0;
+    function round(){
+      var S = SETS[r]; host.innerHTML = '';
+      host.appendChild(el('div', 'task-dir', 'INSIEME ' + (r + 1) + ' DI ' + SETS.length));
+      var area = el('div'); host.appendChild(area); var gq = el('div'); host.appendChild(gq);
+      function groupStep(){
+        gq.innerHTML = '';
+        gq.appendChild(el('div', 'gq', 'COME SI CHIAMA IL GRUPPO? FANNO PARTE DELL’INSIEME…'));
+        var box = el('div', 'opts'); var solved = false;
+        shuffle(SETS.map(function(x){ return x.grp; })).forEach(function(o){
+          var b = el('button', 'opt-btn'); b.textContent = U(o);
+          b.addEventListener('click', function(){
+            if(solved) return;
+            if(o === S.grp){
+              solved = true; b.classList.add('ok');
+              Array.prototype.forEach.call(box.children, function(x){ x.disabled = true; });
+              gq.appendChild(el('div', 'reveal', S.pre + ' fanno parte dell&rsquo;insieme <mark>' + S.grp + '</mark>.'));
+              var nb = el('button', 'btn rosa', r < SETS.length - 1 ? 'PROSSIMO INSIEME ➜' : 'FINITO!');
+              nb.addEventListener('click', function(){ if(r < SETS.length - 1){ r++; round(); } else { nb.disabled = true; reward(p, g, 'AVETE COMPLETATO TUTTI GLI INSIEMI E LE FRASI.'); } });
+              gq.appendChild(nb); scrollTo(nb, 'nearest');
+            } else { b.classList.add('ko'); setTimeout(function(){ b.classList.remove('ko'); }, 450); }
+          });
+          box.appendChild(b);
+        });
+        gq.appendChild(box);
+      }
+      if(S.given){
+        var ov = el('div', 'oval'); ov.style.setProperty('--c', S.color);
+        S.items.forEach(function(it){ ov.appendChild(el('div', 'oitem', '<span class="big">' + it[1] + '</span><span class="lab">' + it[0] + '</span>')); });
+        area.appendChild(ov); groupStep();
+      } else {
+        area.appendChild(el('div', 'hint', '💡 TOCCA UN DISEGNO E POI IL SUO NOME. C&rsquo;&Egrave; UN NOME CHE NON C&rsquo;ENTRA!'));
+        pairGame(area, S.items.map(function(it){ return { id:it[0], left:'<span class="big">' + it[1] + '</span>', right:it[0] }; }), S.distr, groupStep);
+      }
+    }
+    round();
+  }
+
+  function gLink(g){
+    var p = frame(g);
+    p.appendChild(el('div', 'intro', '<b>2.</b> LEGGI I NOMI SPECIFICI E <b>COLLEGALI</b> AL NOME GENERICO GIUSTO: TOCCA UN GRUPPO E POI IL SUO NOME.'));
+    var host = el('div'); p.appendChild(host);
+    var data = [ ['fiori','🌻🌷🌹','girasole, tulipano, rosa'], ['veicoli','✈️🚆🚲','aereo, treno, bicicletta'], ['insetti','🦋🐜🦗','farfalla, formica, cavalletta'], ['posate','🔪🥄🍴','coltello, cucchiaio, forchetta'] ];
+    pairGame(host, shuffle(data).map(function(d){ return { id:d[0], left:'<span class="big">' + d[1] + '</span><span>' + d[2] + '</span>', right:d[0] }; }), [], function(){ reward(p, g, 'OGNI GRUPPO HA IL SUO NOME GENERICO.'); });
+  }
+
+  var INTR = [
+    { grp:'frutta',            w:['mela','pera','banana','tavolo'],         x:'tavolo' },
+    { grp:'animali',           w:['cane','gatto','cavallo','sedia'],        x:'sedia' },
+    { grp:'fiori',             w:['rosa','tulipano','girasole','treno'],    x:'treno' },
+    { grp:'veicoli',           w:['aereo','treno','bicicletta','gelato'],   x:'gelato' },
+    { grp:'cose da mangiare',  w:['biscotti','pizzette','crostata','libro'],x:'libro' },
+    { grp:'posate',            w:['coltello','forchetta','cucchiaio','farfalla'], x:'farfalla' }
+  ];
+  function gIntruder(g){
+    var p = frame(g);
+    p.appendChild(el('div', 'intro', '<b>3.</b> IN OGNI GRUPPO C&rsquo;&Egrave; <b>UN INTRUSO</b>: UNA PAROLA CHE NON FA PARTE DEL GRUPPO. TOCCALA!'));
+    var host = el('div'); p.appendChild(host); var r = 0;
+    function round(){
+      host.innerHTML = ''; var q = INTR[r];
+      var dots = el('div', 'dots'); INTR.forEach(function(_, i){ dots.appendChild(el('div', 'dot' + (i < r ? ' on' : (i === r ? ' cur' : '')))); }); host.appendChild(dots);
+      var box = el('div', 'intr'); var fb = el('div', 'fb'); var solved = false;
+      shuffle(q.w).forEach(function(w){
+        var b = el('button', 'opt-btn'); b.textContent = U(w);
+        b.addEventListener('click', function(){
+          if(solved) return;
+          if(w === q.x){
+            solved = true; b.classList.add('ok');
+            host.appendChild(el('div', 'reveal', 'ESATTO! LE ALTRE SONO NOMI SPECIFICI DEL GRUPPO <mark>' + q.grp.toUpperCase() + '</mark>. <b>' + U(q.x) + '</b> NON FA PARTE DEL GRUPPO.'));
+            var nb = el('button', 'btn rosa', r < INTR.length - 1 ? 'PROSSIMO GRUPPO ➜' : 'FINITO!');
+            nb.addEventListener('click', function(){ if(r < INTR.length - 1){ r++; round(); } else { nb.disabled = true; reward(p, g, 'AVETE SCOVATO TUTTI GLI INTRUSI.'); } });
+            host.appendChild(nb); scrollTo(nb, 'nearest');
+          } else { b.classList.add('ko'); setTimeout(function(){ b.classList.remove('ko'); }, 450); fb.className = 'fb no'; fb.textContent = 'PENSACI: ' + U(w) + ' STA CON GLI ALTRI?'; }
+        });
+        box.appendChild(b);
+      });
+      host.appendChild(box); host.appendChild(fb);
+    }
+    round();
+  }
+
+  /* ================== LIVELLO 3 ================== */
+  var ALICE = 'Nella camera di Alice ci sono: un armadio, una scrivania, due letti, una sedia, tanti libri, una scatola che contiene la collezione di figurine e il gatto che dorme sulla poltrona. Sul pavimento ci sono due tappeti colorati e alcune scatole di costruzioni.';
+  var ALICE_N = ['camera','alice','armadio','scrivania','letti','sedia','libri','scatola','collezione','figurine','gatto','poltrona','pavimento','tappeti','scatole','costruzioni'];
+  var SING = ['camera','Alice','armadio','scrivania','sedia','scatola','collezione','gatto','poltrona','pavimento'];
+  var PLUR = ['letti','libri','figurine','tappeti','scatole','costruzioni'];
+
+  function gHunt3(g){
+    huntGame(g, { text:ALICE, nouns:ALICE_N,
+      intro:'<b>1.</b> TOCCA <b>I NOMI</b> NEL TESTO: SI SOTTOLINEANO! POI TOCCA <b>CONTROLLA</b>.',
+      hint:'💡 UN NOME DICE <b>CHI</b> O <b>CHE COSA</b> C&rsquo;&Egrave;: PERSONE, ANIMALI, COSE, LUOGHI.',
+      ok:'AVETE TROVATO TUTTI I NOMI NEL TESTO.' });
+  }
+  function gSort3(g){
+    var items = SING.map(function(w){ return { w:w, t:'s' }; }).concat(PLUR.map(function(w){ return { w:w, t:'p' }; }));
+    sortGame(g, {
+      intro:'<b>2.</b> TRASCINA OGNI NOME NEL CONTENITORE GIUSTO. OPPURE <b>TOCCA</b> IL NOME E POI IL CONTENITORE.',
+      hint:'💡 PUOI DIRE <b>UN</b> O <b>UNA</b>? &Egrave; SINGOLARE. PUOI DIRE <b>TANTI</b> O <b>TANTE</b>? &Egrave; PLURALE.',
+      items:items,
+      bins:[ {t:'s',title:'UNO - UNA',sub:'(SINGOLARE)',color:'#209AAB'}, {t:'p',title:'TANTI - TANTE',sub:'(PLURALE)',color:'#E01760'} ],
+      wrong:function(w, t){ return t === 's' ? 'PROVA: ' + U(w) + ' È UNO SOLO O TANTI?' : 'PROVA: PUOI DIRE TANTI O TANTE ' + U(w) + '?'; },
+      ok:'OGNI NOME HA TROVATO IL SUO CONTENITORE.' });
+  }
+
+  var FAM = [
+    { k:'o', label:'-O ➜ -I', c:'#209AAB', list:[
+      { art:'IL', pl:'I',   stem:'gatt', e1:'o', e2:'i' }, { art:'IL', pl:'I', stem:'libr', e1:'o', e2:'i' },
+      { art:'LO', pl:'GLI', stem:'zain', e1:'o', e2:'i' }, { art:"L'", pl:'GLI', stem:'amic', e1:'o', e2:'i' } ] },
+    { k:'a', label:'-A ➜ -E', c:'#E01760', list:[
+      { art:'LA', pl:'LE', stem:'penn', e1:'a', e2:'e' }, { art:'LA', pl:'LE', stem:'scatol', e1:'a', e2:'e' }, { art:'LA', pl:'LE', stem:'farfall', e1:'a', e2:'e' },
+      { art:'LA', pl:'LE', stem:'barc', e1:'a', e2:'he', note:'ATTENZIONE: BARCA ➜ BARCHE. SI AGGIUNGE LA H, PER TENERE IL SUONO DURO.' } ] },
+    { k:'e', label:'-E ➜ -I', c:'#E7900C', list:[
+      { art:'IL', pl:'I', stem:'fior', e1:'e', e2:'i' }, { art:'IL', pl:'I', stem:'visitator', e1:'e', e2:'i' }, { art:'LA', pl:'LE', stem:'collezion', e1:'e', e2:'i' } ] }
+  ];
+  function phrase(art, stem, end){ return '<span class="art">' + art + (art.slice(-1) === "'" ? '' : ' ') + '</span>' + U(stem) + '<span class="end">' + U(end) + '</span>'; }
+
+  function gMachine(g){
+    var p = frame(g);
+    p.appendChild(el('div', 'intro', '<b>3.</b> SCEGLI UN NOME E METTILO NELLA MACCHINA. GUARDA COME CAMBIANO <b>LA FINE</b> E <b>L&rsquo;ARTICOLO</b>. POI SCOPRI LA REGOLA!'));
+    var tabs = el('div', 'tabs'); var chips = el('div', 'nchips');
+    var machine = el('div', 'machine');
+    machine.innerHTML = '<div class="mbox" style="--c:#209AAB"><div class="mlab">UNO</div><div class="mword" id="mIn">&nbsp;</div></div><div class="marrow">⚙️➜</div><div class="mbox out" style="--c:#E01760"><div class="mlab">TANTI</div><div class="mword" id="mOut">&nbsp;</div></div>';
+    var note = el('div', 'hint'); note.hidden = true;
+    var tried = {}, nTried = 0;
+    var ruleBtn = el('button', 'btn arancio', '🔮 SCOPRI LA REGOLA'); ruleBtn.hidden = true;
+    var info = el('div', 'fb info'); info.textContent = 'PROVA ALMENO 5 NOMI PER SBLOCCARE LA REGOLA.';
+    var rules = el('div', 'rules'); rules.hidden = true;
+    function showFam(i){
+      chips.innerHTML = '';
+      Array.prototype.forEach.call(tabs.children, function(t, k){ t.classList.toggle('on', k === i); });
+      FAM[i].list.forEach(function(n){
+        var key = n.stem; var b = el('button', 'nchip' + (tried[key] ? ' tried' : '')); b.textContent = U(n.art + (n.art.slice(-1) === "'" ? '' : ' ') + n.stem + n.e1);
+        b.addEventListener('click', function(){
+          Array.prototype.forEach.call(chips.children, function(c){ c.classList.remove('cur'); }); b.classList.add('cur', 'tried');
+          if(!tried[key]){ tried[key] = true; nTried++; }
+          var mi = document.getElementById('mIn'); if(!mi) return; mi.innerHTML = phrase(n.art, n.stem, n.e1); document.getElementById('mOut').innerHTML = '&nbsp;';
+          machine.classList.remove('go'); void machine.offsetWidth; machine.classList.add('go');
+          setTimeout(function(){ var o = document.getElementById('mOut'); if(o) o.innerHTML = phrase(n.pl, n.stem, n.e2); }, reducedMotion() ? 0 : 250);
+          note.hidden = !n.note; if(n.note) note.innerHTML = '⚠️ ' + n.note;
+          if(nTried >= 5){ ruleBtn.hidden = false; info.textContent = 'BRAVI! ORA PUOI SCOPRIRE LA REGOLA.'; } else info.textContent = 'NOMI PROVATI: ' + nTried + ' / 5';
+        });
+        chips.appendChild(b);
+      });
+    }
+    FAM.forEach(function(f, i){ var t = el('button', 'tab'); t.textContent = f.label; t.style.setProperty('--c', f.c); t.addEventListener('click', function(){ showFam(i); }); tabs.appendChild(t); });
+    p.appendChild(tabs); p.appendChild(chips); p.appendChild(machine); p.appendChild(note); p.appendChild(info); p.appendChild(ruleBtn); p.appendChild(rules);
+    showFam(0);
+    ruleBtn.addEventListener('click', function(){
+      ruleBtn.hidden = true; rules.hidden = false;
+      var Q = [ { f:'-O', ok:'I', opts:['I','E','A'] }, { f:'-A', ok:'E', opts:['I','E','O'] }, { f:'-E', ok:'I', opts:['I','A','O'] } ];
+      rules.innerHTML = '<div class="reward-t" style="font-size:clamp(20px,3vw,30px)">COMPLETA LA REGOLA</div>'; var okCount = 0;
+      Q.forEach(function(q){
+        var row = el('div', 'rule-row'); row.appendChild(el('span', '', 'UN NOME CHE FINISCE IN <b style="color:var(--rosa)">' + q.f + '</b> AL PLURALE FINISCE IN <b>-</b>'));
+        q.opts.forEach(function(o){
+          var b = el('button', 'opt'); b.textContent = '-' + o;
+          b.addEventListener('click', function(){
+            if(row.dataset.done) return;
+            if(o === q.ok){
+              b.classList.add('ok'); row.dataset.done = '1'; okCount++;
+              if(okCount === Q.length){
+                rules.appendChild(el('div', 'reveal', 'REGOLA TROVATA! <b>-O ➜ -I</b> &middot; <b>-A ➜ -E</b> &middot; <b>-E ➜ -I</b>. E L&rsquo;ARTICOLO CAMBIA INSIEME AL NOME: IL ➜ I, LA ➜ LE, LO ➜ GLI.'));
+                reward(p, g, 'AVETE SCOPERTO COME CAMBIANO LE FINALI DEI NOMI.');
+              }
+            } else { b.classList.add('ko'); setTimeout(function(){ b.classList.remove('ko'); }, 450); }
+          });
+          row.appendChild(b);
+        });
+        rules.appendChild(row);
+      });
+      scrollTo(rules);
+    });
+  }
+
+  var T4 = [
+    { prompt:'bicicletta', dir:'SINGOLARE ➜ PLURALE', art:'LE',  noun:'biciclette', artOpts:['I','GLI','LE'],      nounOpts:['biciclette','bicicletti','bicicletta'] },
+    { prompt:'amici',      dir:'PLURALE ➜ SINGOLARE', art:"L'",  noun:'amico',      artOpts:['IL','LO','LA',"L'"], nounOpts:['amico','amice','amici'] },
+    { prompt:'barca',      dir:'SINGOLARE ➜ PLURALE', art:'LE',  noun:'barche',     artOpts:['I','GLI','LE'],      nounOpts:['barche','barce','barca'] },
+    { prompt:'farfalle',   dir:'PLURALE ➜ SINGOLARE', art:'LA',  noun:'farfalla',   artOpts:['IL','LO','LA',"L'"], nounOpts:['farfalla','farfallo','farfalle'] },
+    { prompt:'zaino',      dir:'SINGOLARE ➜ PLURALE', art:'GLI', noun:'zaini',      artOpts:['I','GLI','LE'],      nounOpts:['zaini','zaine','zaino'] },
+    { prompt:'visitatori', dir:'PLURALE ➜ SINGOLARE', art:'IL',  noun:'visitatore', artOpts:['IL','LO','LA',"L'"], nounOpts:['visitatore','visitatora','visitatori'] },
+    { prompt:'finestre',   dir:'PLURALE ➜ SINGOLARE', art:'LA',  noun:'finestra',   artOpts:['IL','LO','LA',"L'"], nounOpts:['finestra','finestro','finestre'] },
+    { prompt:'treni',      dir:'PLURALE ➜ SINGOLARE', art:'IL',  noun:'treno',      artOpts:['IL','LO','LA',"L'"], nounOpts:['treno','trena','treni'] }
+  ];
+  var T5 = [
+    { prompt:'il taxi',   dir:'SINGOLARE ➜ PLURALE', art:'I',   noun:'taxi',   artOpts:['I','GLI','LE'], nounOpts:['taxi','taxii','taxe'] },
+    { prompt:'il cinema', dir:'SINGOLARE ➜ PLURALE', art:'I',   noun:'cinema', artOpts:['I','GLI','LE'], nounOpts:['cinema','cinemi','cineme'] },
+    { prompt:'la foto',   dir:'SINGOLARE ➜ PLURALE', art:'LE',  noun:'foto',   artOpts:['I','GLI','LE'], nounOpts:['foto','foti','fote'] },
+    { prompt:'lo sport',  dir:'SINGOLARE ➜ PLURALE', art:'GLI', noun:'sport',  artOpts:['I','GLI','LE'], nounOpts:['sport','sporti','sporte'] }
+  ];
+  function gTrasforma(g){
+    var p = frame(g);
+    p.appendChild(el('div', 'intro', '<b>4.</b> <b>LAVORATE IN COPPIA:</b> TRASFORMATE IL NOME DAL SINGOLARE AL PLURALE E VICEVERSA. METTETE ANCHE GLI ARTICOLI! PRIMA PARLATE, POI TOCCATE.'));
+    var host = el('div'); p.appendChild(host);
+    runItems(host, T4, function(){ reward(p, g, 'AVETE TRASFORMATO TUTTI I NOMI, CON GLI ARTICOLI GIUSTI.'); });
+  }
+  function gDetective(g){
+    var p = frame(g);
+    p.appendChild(el('div', 'intro', '<b>5.</b> TRASFORMA AL PLURALE <b>SIA L&rsquo;ARTICOLO SIA IL NOME</b>. POI SCOPRI: CHE COSA SUCCEDE?'));
+    var host = el('div'); p.appendChild(host);
+    var find = el('div', 'find'); find.hidden = true; p.appendChild(find);
+    runItems(host, T5, function(){
+      find.hidden = false;
+      find.innerHTML = '<h3>🕵️ CHE COSA SUCCEDE?</h3><div class="intro" style="border-left-color:var(--rosa)">GUARDA BENE: IL TAXI ➜ I TAXI. COSA È CAMBIATO? CONFRONTATI CON LA MAESTRA E CON I COMPAGNI, POI SCEGLIETE.</div>';
+      var choices = [ { t:'CAMBIA SOLO L’ARTICOLO. IL NOME RESTA UGUALE.', ok:true }, { t:'CAMBIANO TUTTI E DUE: ARTICOLO E NOME.', ok:false }, { t:'NON CAMBIA NIENTE, NEANCHE L’ARTICOLO.', ok:false } ];
+      var fin = false;
+      shuffle(choices).forEach(function(c){
+        var b = el('button', 'choice'); b.textContent = c.t;
+        b.addEventListener('click', function(){
+          if(fin) return;
+          if(c.ok){
+            fin = true; b.classList.add('ok');
+            find.appendChild(el('div', 'reveal', '<b>SCOPERTA!</b> ALCUNI NOMI SONO <b>INVARIABILI</b>: AL PLURALE NON CAMBIANO. LO CAPISCI DALL&rsquo;ARTICOLO: <b>IL</b> TAXI ➜ <b>I</b> TAXI.<br>SAI TROVARNE ALTRI? ECCONE ALCUNI:<div class="pairs"><span class="pair">IL BAR ➜ I BAR</span><span class="pair">IL FILM ➜ I FILM</span><span class="pair">IL COMPUTER ➜ I COMPUTER</span><span class="pair">LA CITTÀ ➜ LE CITTÀ</span><span class="pair">IL CAFFÈ ➜ I CAFFÈ</span></div>'));
+            reward(p, g, 'AVETE SCOPERTO I NOMI CHE NON CAMBIANO.');
+          } else { b.classList.add('ko'); setTimeout(function(){ b.classList.remove('ko'); }, 450); toast('GUARDATE ANCORA: IL NOME È UGUALE?'); }
+        });
+        find.appendChild(b);
+      });
+      scrollTo(find, 'start');
+    });
+  }
+
+  /* ================== NUOVI MOTORI ================== */
+  function norm(s){ return String(s).replace(/[’‘]/g, "'").toLowerCase().trim().replace(/\s+/g, ' ').replace(/^((il|lo|la|i|gli|le|un|uno|una)\s+|(l'|un')\s*)/, ''); }
+  function Q(q, a, wrongs, note, sub){ return { q:q, sub:sub || '', a:a, opts:[a].concat(wrongs), note:note || '' }; }
+
+  /* serie di domande a scelta multipla */
+  function quizRounds(g, cfg){
+    var p = frame(g);
+    p.appendChild(el('div', 'intro', cfg.intro));
+    var host = el('div'); p.appendChild(host); var idx = 0;
+    function render(){
+      host.innerHTML = ''; var it = cfg.items[idx];
+      var dots = el('div', 'dots'); cfg.items.forEach(function(_, i){ dots.appendChild(el('div', 'dot' + (i < idx ? ' on' : (i === idx ? ' cur' : '')))); });
+      host.appendChild(dots);
+      var task = el('div', 'task');
+      task.appendChild(el('div', 'qline', it.q + (it.sub ? '<small>' + it.sub + '</small>' : '')));
+      var box = el('div', 'opts'); var fb = el('div', 'fb'); var solved = false;
+      shuffle(it.opts).forEach(function(o){
+        var b = el('button', 'opt-btn'); b.textContent = U(o);
+        b.addEventListener('click', function(){
+          if(solved) return;
+          if(o === it.a){
+            solved = true; b.classList.add('ok');
+            Array.prototype.forEach.call(box.children, function(x){ x.disabled = true; });
+            fb.className = 'fb ok'; fb.innerHTML = 'GIUSTO!' + (it.note ? ' ' + it.note : '');
+            var nb = el('button', 'btn rosa', idx < cfg.items.length - 1 ? 'AVANTI ➜' : 'FINITO!');
+            nb.addEventListener('click', function(){ if(idx < cfg.items.length - 1){ idx++; render(); } else { nb.disabled = true; reward(p, g, cfg.ok); } });
+            task.appendChild(nb);
+          } else { b.classList.add('ko'); setTimeout(function(){ b.classList.remove('ko'); }, 450); fb.className = 'fb no'; fb.textContent = 'RIFLETTETE INSIEME E RIPROVATE!'; }
+        });
+        box.appendChild(b);
+      });
+      task.appendChild(box); task.appendChild(fb); host.appendChild(task);
+    }
+    render();
+  }
+
+  /* tocca solo le parole giuste */
+  function pickGame(g, cfg){
+    var p = frame(g);
+    p.appendChild(el('div', 'intro', cfg.intro)); if(cfg.hint) p.appendChild(el('div', 'hint', cfg.hint));
+    var cloud = el('div', 'cloud'); var need = cfg.words.filter(function(w){ return w.ok; }).length, got = 0;
+    var fb = el('div', 'fb info'); fb.textContent = 'TROVATI: 0 / ' + need;
+    shuffle(cfg.words).forEach(function(w){
+      var b = el('button', 'pick'); b.textContent = w.w; b.dataset.ok = w.ok ? '1' : '0';
+      b.addEventListener('click', function(){
+        if(b.classList.contains('good')) return;
+        if(w.ok){
+          b.classList.add('good'); got++; fb.className = 'fb ok'; fb.textContent = 'TROVATI: ' + got + ' / ' + need;
+          if(got === need) reward(p, g, cfg.ok);
+        } else {
+          b.classList.add('bad'); setTimeout(function(){ b.classList.remove('bad'); }, 500);
+          fb.className = 'fb no'; fb.textContent = cfg.wrong || 'QUESTO NON VA BENE: RIPROVA!';
+        }
+      });
+      cloud.appendChild(b);
+    });
+    p.appendChild(cloud); p.appendChild(fb);
+  }
+
+  /* tabella: genere e numero */
+  function gridGame(g, cfg){
+    var p = frame(g);
+    p.appendChild(el('div', 'intro', cfg.intro));
+    var rows = el('div', 'grows'); var states = [];
+    cfg.rows.forEach(function(r, i){
+      var row = el('div', 'grow'); row.appendChild(el('div', 'ph', r.ph)); var st = { g:null, n:null, row:row }; states.push(st);
+      [ { k:'g', o:[['m', 'MASCHILE'], ['f', 'FEMMINILE']] }, { k:'n', o:[['s', 'SINGOLARE'], ['p', 'PLURALE']] } ].forEach(function(grp){
+        var tg = el('div', 'tg');
+        grp.o.forEach(function(o){
+          var b = el('button', '', o[1]); b.dataset.v = o[0];
+          b.addEventListener('click', function(){
+            st[grp.k] = o[0]; row.classList.remove('ko');
+            Array.prototype.forEach.call(tg.children, function(x){ x.classList.toggle('sel', x === b); });
+          });
+          tg.appendChild(b);
+        });
+        row.appendChild(tg);
+      });
+      rows.appendChild(row);
+    });
+    p.appendChild(rows);
+    var fb = el('div', 'fb'); var acts = el('div', 'actions'); var ck = el('button', 'btn rosa', '✔ CONTROLLA'); acts.appendChild(ck);
+    p.appendChild(acts); p.appendChild(fb);
+    ck.addEventListener('click', function(){
+      var bad = 0;
+      cfg.rows.forEach(function(r, i){
+        var s = states[i], ok = s.g === r.g && s.n === r.n;
+        s.row.classList.toggle('ok', ok); s.row.classList.toggle('ko', !ok); if(!ok) bad++;
+      });
+      if(!bad){ fb.className = 'fb ok'; fb.textContent = 'TUTTO GIUSTO!'; ck.disabled = true; reward(p, g, cfg.ok); }
+      else { fb.className = 'fb no'; fb.textContent = 'ANCORA ' + bad + (bad === 1 ? ' RIGA DA CORREGGERE' : ' RIGHE DA CORREGGERE') + ': GUARDA ARTICOLO E FINALE DEL NOME.'; }
+    });
+  }
+
+  /* scrivi tuoi esempi: dizionario + approvazione della maestra */
+  function listGame(g, cfg){
+    var p = frame(g);
+    p.appendChild(el('div', 'intro', cfg.intro)); if(cfg.hint) p.appendChild(el('div', 'hint', cfg.hint));
+    var doneCount = 0; var wrap = el('div', 'grows'); var groups = [];
+    function check(){
+      var all = true;
+      groups.forEach(function(gr){
+        var n = gr.valid.length; gr.count.textContent = n + ' / ' + gr.cfg.need;
+        var full = n >= gr.cfg.need; gr.box.classList.toggle('full', full); if(!full) all = false;
+      });
+      if(all && !p.querySelector('.reward')) reward(p, g, cfg.ok);
+    }
+    cfg.groups.forEach(function(gc){
+      var box = el('div', 'lgroup'); box.style.setProperty('--c', gc.color || 'var(--turchese)');
+      box.appendChild(el('div', 'lt', gc.title));
+      var row = el('div', 'lrow'); var inp = el('input'); inp.type = 'text'; inp.maxLength = 30; inp.placeholder = 'SCRIVI UNA PAROLA…'; inp.setAttribute('aria-label', gc.title);
+      var add = el('button', 'btn', '+ AGGIUNGI'); var count = el('span', 'lcount', '0 / ' + gc.need);
+      row.appendChild(inp); row.appendChild(add); row.appendChild(count); box.appendChild(row);
+      var chips = el('div', 'lchips'); box.appendChild(chips);
+      var gr = { cfg:gc, box:box, count:count, valid:[] }; groups.push(gr);
+      function addWord(){
+        var v = inp.value.trim(); if(!v) return; var key = norm(v);
+        if(gr.valid.indexOf(key) >= 0 || Array.prototype.some.call(chips.children, function(c){ return c.dataset.k === key; })){ toast('LA HAI GIÀ SCRITTA!'); return; }
+        inp.value = ''; inp.focus();
+        var c = el('span', 'lchip'); c.dataset.k = key; c.appendChild(document.createTextNode(v));
+        if(gc.accept.indexOf(key) >= 0){ gr.valid.push(key); chips.appendChild(c); check(); return; }
+        c.classList.add('q'); c.appendChild(document.createTextNode(' ?'));
+        var yes = el('button', '', '✔'); yes.title = 'La maestra approva'; yes.setAttribute('aria-label', 'La maestra approva ' + v);
+        var no = el('button', '', '✕'); no.title = 'Togli'; no.setAttribute('aria-label', 'Togli ' + v);
+        yes.addEventListener('click', function(){ c.classList.remove('q'); c.innerHTML = ''; c.appendChild(document.createTextNode(v)); gr.valid.push(key); check(); });
+        no.addEventListener('click', function(){ c.remove(); check(); });
+        c.appendChild(yes); c.appendChild(no); chips.appendChild(c); toast('NON LA CONOSCO: LA MAESTRA DECIDE (✔ O ✕)');
+      }
+      add.addEventListener('click', addWord);
+      inp.addEventListener('keydown', function(e){ if(e.key === 'Enter'){ e.preventDefault(); addWord(); } });
+      wrap.appendChild(box);
+    });
+    p.appendChild(wrap);
+  }
+
+  /* una frase per ogni parola */
+  function sentenceGame(g, cfg){
+    var p = frame(g);
+    p.appendChild(el('div', 'intro', cfg.intro));
+    p.appendChild(el('div', 'bank', cfg.words.map(function(w){ return '<span class="xchip">' + w + '</span>'; }).join('')));
+    var rows = []; var host = el('div', 'grows');
+    for(var i = 0; i < cfg.n; i++){
+      var r = el('div', 'frow'); r.appendChild(el('div', 'fl', 'FRASE ' + (i + 1)));
+      var fr = el('div', 'fr'); var sel = el('select'); sel.setAttribute('aria-label', 'Parola ' + (i + 1));
+      sel.style.cssText = 'font-family:Fredoka One,cursive;font-size:20px;border:3px solid #1A2F4A;border-radius:14px;padding:6px 10px;min-height:48px;text-transform:uppercase';
+      var o0 = el('option', '', 'SCEGLI…'); o0.value = ''; sel.appendChild(o0);
+      cfg.words.forEach(function(w){ var o = el('option', '', w); o.value = w; sel.appendChild(o); });
+      var inp = el('input'); inp.type = 'text'; inp.maxLength = 120; inp.placeholder = 'SCRIVI LA FRASE…'; inp.setAttribute('aria-label', 'Frase ' + (i + 1));
+      fr.appendChild(sel); fr.appendChild(inp); r.appendChild(fr); host.appendChild(r); rows.push({ r:r, sel:sel, inp:inp });
+    }
+    p.appendChild(host);
+    var fb = el('div', 'fb'); var acts = el('div', 'actions'); var ck = el('button', 'btn rosa', '✔ CONTROLLA'); acts.appendChild(ck); p.appendChild(acts); p.appendChild(fb);
+    ck.addEventListener('click', function(){
+      var bad = 0, used = {};
+      rows.forEach(function(x){
+        var w = x.sel.value, s = x.inp.value.trim(), ok = !!w && !used[w] && s.split(/\s+/).length >= 3 && s.toLowerCase().indexOf(w.toLowerCase()) >= 0;
+        if(w) used[w] = true; x.r.classList.toggle('ok', ok); if(!ok) bad++;
+      });
+      if(!bad){ fb.className = 'fb ok'; fb.textContent = 'CHE BELLE FRASI!'; ck.disabled = true; reward(p, g, cfg.ok); }
+      else { fb.className = 'fb no'; fb.textContent = 'CONTROLLA: OGNI RIGA HA UNA PAROLA DIVERSA E UNA FRASE (ALMENO 3 PAROLE) CHE LA CONTIENE.'; }
+    });
+  }
+
+  /* ================== SCHEMI: AIUTI ================== */
+  function treeScheme(b, title, def, hint, nodes, foot){
+    b.innerHTML = '<div class="sch-title">' + title + '</div><div class="sch-def">' + def + '</div><div class="sch-hint">' + hint + '</div>';
+    var tree = el('div', 'tree');
+    nodes.forEach(function(o){
+      var n = el('div', 'gnode'); n.style.setProperty('--c', 'var(' + o.c + ')');
+      var h = el('button', '', '<span>' + o.g + '</span><span>▾</span>');
+      var k = el('div', 'kids'); o.kids.forEach(function(x){ k.appendChild(el('div', 'kid', '<span class="big">' + x[0] + '</span><span class="xchip">' + x[1] + '</span>')); });
+      if(o.note) k.appendChild(el('div', 'sch-hint', o.note));
+      h.addEventListener('click', function(){ n.classList.toggle('open'); });
+      n.appendChild(h); n.appendChild(k); tree.appendChild(n);
+    });
+    b.appendChild(tree); b.appendChild(el('div', 'sch-def', foot));
+  }
+  function flipScheme(b, title, def, cols, foot){
+    b.innerHTML = '<div class="sch-title">' + title + '</div><div class="sch-def">' + def + '</div><div class="sch-hint">👉 TOCCA OGNI RIQUADRO PER VEDERE GLI ESEMPI</div>';
+    var wrap = el('div', 'sch-cols');
+    cols.forEach(function(o){
+      var c = el('button', 'sch-col'); c.style.setProperty('--c', 'var(' + o.c + ')');
+      c.innerHTML = '<div class="ch">' + o.ch + '</div><div class="emo">' + o.emo + '</div><div class="nm">' + o.nm + '</div><div class="tap">TOCCA</div><div class="ex">' + o.ex.map(function(x){ return '<span class="xchip">' + x + '</span>'; }).join('') + '</div>';
+      c.addEventListener('click', function(){ c.classList.toggle('open'); });
+      wrap.appendChild(c);
+    });
+    b.appendChild(wrap); b.appendChild(el('div', 'sch-def', foot));
+  }
+
+  function scheme3(b){
+    treeScheme(b, 'NOMI MASCHILI E FEMMINILI',
+      'OGNI NOME HA UN <b>GENERE</b>: <b>MASCHILE</b> (IL, LO, UN) OPPURE <b>FEMMINILE</b> (LA, UNA). PER SAPERLO, PROVA A METTERE L’ARTICOLO!',
+      '👉 TOCCA UN RIQUADRO: COME SI PASSA DAL MASCHILE AL FEMMINILE?',
+      [ { c:'--turchese', g:'CAMBIA LA FINALE: -O ➜ -A',            kids:[['👦👧','alunno ➜ alunna'],['👨‍🍳👩‍🍳','cuoco ➜ cuoca'],['🧒','figlio ➜ figlia']] },
+        { c:'--rosa',     g:'SI AGGIUNGE -ESSA O CAMBIA -TORE/-TRICE', kids:[['🎓','studente ➜ studentessa'],['🩺','dottore ➜ dottoressa'],['🎨','pittore ➜ pittrice'],['🎭','attore ➜ attrice']] },
+        { c:'--arancio',  g:'NOMI DIVERSI PER IL MASCHILE E IL FEMMINILE', kids:[['💍','marito ➜ moglie'],['🚹🚺','uomo ➜ donna'],['🐓🐔','gallo ➜ gallina'],['👑','re ➜ regina']] },
+        { c:'--verde',    g:'IL NOME NON CAMBIA: CAMBIA L’ARTICOLO', kids:[['🎤','il cantante ➜ la cantante'],['📰','il giornalista ➜ la giornalista']] } ],
+      '💡 <b>IL BAMBINO / LA BAMBINA:</b> L’ARTICOLO TI AIUTA SEMPRE. SE NON SAI QUALE USARE, PROVA <b>IL</b> E <b>LA</b>: SOLO UNO DEI DUE SUONA BENE!');
+  }
+  function scheme5(b){
+    flipScheme(b, 'NOMI CONCRETI E ASTRATTI',
+      'I NOMI <b>CONCRETI</b> INDICANO COSE CHE SI POSSONO <b>VEDERE E TOCCARE</b>. I NOMI <b>ASTRATTI</b> INDICANO IDEE, EMOZIONI E QUALITÀ CHE SI <b>PENSANO O SI SENTONO</b>.',
+      [ { c:'--verde', ch:'LO VEDO, LO TOCCO', emo:'🏔️🚗', nm:'CONCRETO', ex:['montagna','macchina','castoro'] },
+        { c:'--rosa',  ch:'LO PENSO, LO SENTO', emo:'💭❤️', nm:'ASTRATTO', ex:['amicizia','tristezza','coraggio'] } ],
+      '💡 <b>TRUCCO:</b> POSSO FARNE UNA FOTO? SE SÌ, È CONCRETO. SE NO (COME <b>FELICITÀ</b>), È ASTRATTO.');
+  }
+  function scheme6(b){
+    treeScheme(b, 'NOMI PRIMITIVI E DERIVATI',
+      'UN NOME <b>PRIMITIVO</b> NON DERIVA DA ALTRI NOMI. DA UN PRIMITIVO SI FORMANO I <b>DERIVATI</b>, CHE FANNO PARTE DELLA STESSA FAMIGLIA DI PAROLE.',
+      '👉 TOCCA UN PRIMITIVO PER VEDERE LA SUA FAMIGLIA',
+      [ { c:'--turchese', g:'PORTA (PRIMITIVO)',  kids:[['🚪','portiere'],['🏢','portinaio']] },
+        { c:'--rosa',     g:'LIBRO (PRIMITIVO)',  kids:[['📚','libreria'],['🧑‍💼','libraio']] },
+        { c:'--arancio',  g:'DENTE (PRIMITIVO)',  kids:[['🦷','dentista'],['😁','dentiera']] },
+        { c:'--verde',    g:'PANE (PRIMITIVO)',   kids:[['🥖','panettiere'],['🧺','paniere']] } ],
+      '💡 <b>PORTA ➜ PORTIERE:</b> LA PAROLA NUOVA SI FORMA AGGIUNGENDO UNA PARTE ALLA FINE. STA’ ATTENTO: <b>CASTAGNA</b> NON DERIVA DA <b>CASA</b>!');
+  }
+  function scheme7(b){
+    treeScheme(b, 'NOMI ALTERATI',
+      'I NOMI <b>ALTERATI</b> SONO NOMI CHE CAMBIANO LA FINE PER DIRE SE LA COSA È <b>PICCOLA, GRANDE, CARINA O BRUTTA</b>.',
+      '👉 TOCCA UN TIPO DI ALTERATO',
+      [ { c:'--turchese', g:'DIMINUTIVO (PICCOLO)',    kids:[['🐶','cagnolino'],['🚪','porticina'],['🐱','gattino']] },
+        { c:'--rosa',     g:'ACCRESCITIVO (GRANDE)',   kids:[['🐕','cagnone'],['🏠','casone'],['🐈','gattone']] },
+        { c:'--arancio',  g:'VEZZEGGIATIVO (CARINO)',  kids:[['🐩','cagnetto'],['👟','scarpetta'],['🪆','bambolina']] },
+        { c:'--verde',    g:'DISPREGIATIVO (BRUTTO)',  kids:[['🐕‍🦺','cagnaccio'],['📕','libraccio'],['🌧️','giornataccia']] } ],
+      '💡 CAMBIA LA FINE, MA <b>LA PAROLA È LA STESSA</b>: CANE ➜ CAGNOLINO, CAGNONE, CAGNETTO, CAGNACCIO.');
+  }
+  function scheme8(b){
+    treeScheme(b, 'NOMI COMPOSTI',
+      'UN NOME <b>COMPOSTO</b> NASCE DALL’UNIONE DI <b>DUE PAROLE</b> CHE DIVENTANO UNA SOLA, CON UN SIGNIFICATO NUOVO.',
+      '👉 TOCCA UN RIQUADRO PER VEDERE COME SI UNISCONO',
+      [ { c:'--turchese', g:'NOME + NOME',      kids:[['🧰','cassa + panca = cassapanca'],['🦈','pesce + cane = pescecane']] },
+        { c:'--rosa',     g:'VERBO + NOME',     kids:[['💇','asciuga + capelli = asciugacapelli'],['🍾','cava + tappi = cavatappi'],['🔑','porta + chiavi = portachiavi']] },
+        { c:'--arancio',  g:'ALTRE UNIONI',     kids:[['🕛','mezzo + giorno = mezzogiorno'],['🎹','piano + forte = pianoforte'],['🎲','passa + tempo = passatempo']] } ],
+      '💡 <b>ASCIUGA + CAPELLI = ASCIUGACAPELLI:</b> DUE PAROLE, UNA COSA NUOVA!');
+  }
+  function scheme9(b){
+    treeScheme(b, 'NOMI COLLETTIVI',
+      'UN NOME <b>COLLETTIVO</b> È SINGOLARE, MA INDICA <b>UN INSIEME DI TANTI</b> ESSERI O COSE DELLO STESSO TIPO.',
+      '👉 TOCCA UN RIQUADRO PER SCOPRIRE GLI INSIEMI',
+      [ { c:'--turchese', g:'ANIMALI',            kids:[['🐦','stormo = tanti uccelli'],['🐑','gregge = tante pecore'],['🐝','sciame = tante api']] },
+        { c:'--verde',    g:'PIANTE',             kids:[['🍎','frutteto = tanti alberi da frutto'],['🫒','uliveto = tanti ulivi']] },
+        { c:'--arancio',  g:'PERSONE E COSE',     kids:[['🪖','esercito = tanti soldati'],['🎻','orchestra = tanti musicisti'],['⭐','costellazione = tante stelle']] } ],
+      '💡 <b>UNO STORMO</b> È UNA SOLA PAROLA AL SINGOLARE, MA DENTRO CI SONO TANTI UCCELLI!');
+  }
+  function scheme10(b){
+    treeScheme(b, 'RIPASSO FINALE',
+      'ORA IL MAESTRO SEI TU! RICORDA QUELLO CHE HAI IMPARATO SUI NOMI.',
+      '👉 TOCCA UN RIQUADRO PER RIPASSARE',
+      [ { c:'--turchese', g:'GENERE E NUMERO',               kids:[['👦👧','MASCHILE O FEMMINILE: IL / LA'],['1️⃣🔢','SINGOLARE O PLURALE: UNO / TANTI']] },
+        { c:'--rosa',     g:'GENERICI E SPECIFICI',          kids:[['🍅','verdura ➜ pomodoro, carota, zucchina'],['👕','vestiti ➜ maglia, gonna, calze']] },
+        { c:'--arancio',  g:'NOMI COMUNI E NOMI PROPRI',     kids:[['✏️','COMUNI: minuscola (matita, città)'],['🔠','PROPRI: MAIUSCOLA (Elena, Torino, Italia)']] } ],
+      '💡 I <b>NOMI PROPRI</b> (PERSONE, CITTÀ, STATI, MARI…) SI SCRIVONO SEMPRE CON LA <b>MAIUSCOLA</b>.');
+  }
+
+  /* ================== LIVELLO 3: MASCHILI E FEMMINILI ================== */
+  var MF_TEXT = 'Papà ha comprato una sciarpa per la maestra. Sofia e Luca preparano la cena con la mamma. Il gatto dorme sul divano e i bambini ascoltano una storia.';
+  var MF_N = ['papà','sciarpa','maestra','sofia','luca','cena','mamma','gatto','divano','bambini','storia'];
+  function gHuntMF(g){
+    huntGame(g, { text:MF_TEXT, nouns:MF_N,
+      intro:'<b>1.</b> LEGGI E TOCCA <b>I NOMI</b> DELLE FRASI. POI TOCCA <b>CONTROLLA</b>.',
+      hint:'💡 PERSONE, ANIMALI E COSE: SE UNA PAROLA SI PUÒ METTERE DOPO <b>IL</b> O <b>LA</b>, È UN NOME. ATTENZIONE AI NOMI PROPRI!',
+      ok:'AVETE TROVATO TUTTI I NOMI. NEL PROSSIMO GIOCO LI SMISTATE IN MASCHILI E FEMMINILI.' });
+  }
+  function gSortMF(g){
+    sortGame(g, {
+      intro:'<b>2.</b> <b>IN COPPIA:</b> TRASCINATE OGNI NOME NELLA COLONNA GIUSTA, MASCHILE O FEMMINILE. OPPURE TOCCATE IL NOME E POI LA COLONNA.',
+      hint:'💡 PROVA CON L’ARTICOLO: <b>IL / LO / UN</b> ➜ MASCHILE. <b>LA / UNA</b> ➜ FEMMINILE.',
+      items:[ {w:'Sofia',t:'f'},{w:'sciarpa',t:'f'},{w:'righe',t:'f'},{w:'cena',t:'f'},{w:'maestra',t:'f'},{w:'storia',t:'f'},
+              {w:'papà',t:'m'},{w:'gatto',t:'m'},{w:'divano',t:'m'},{w:'Luca',t:'m'},{w:'bambini',t:'m'},{w:'pirati',t:'m'} ],
+      bins:[ {t:'m',title:'MASCHILE',sub:'IL · LO · UN',color:'#209AAB'}, {t:'f',title:'FEMMINILE',sub:'LA · UNA',color:'#E01760'} ],
+      wrong:function(w){ return 'PROVA CON L’ARTICOLO: SI DICE “IL ' + w.toUpperCase() + '” O “LA ' + w.toUpperCase() + '”?'; },
+      ok:'AVETE SMISTATO TUTTI I NOMI IN MASCHILI E FEMMINILI.' });
+  }
+  function gTrasfMF(g){
+    quizRounds(g, {
+      intro:'<b>3.</b> <b>IN COPPIA:</b> OGNI NOME HA UN COMPAGNO. TROVA IL <b>FEMMINILE</b> O IL <b>MASCHILE</b> GIUSTO.',
+      ok:'AVETE FORMATO TUTTE LE COPPIE MASCHILE E FEMMINILE.',
+      items:[ Q('ALUNNO ➜ ?', 'alunna', ['alunne','alunni'], '', 'SCEGLI IL FEMMINILE'),
+              Q('CUOCO ➜ ?', 'cuoca', ['cuoce','cuochi'], '', 'SCEGLI IL FEMMINILE'),
+              Q('FIGLIO ➜ ?', 'figlia', ['figlie','figli'], '', 'SCEGLI IL FEMMINILE'),
+              Q('CAMERIERA ➜ ?', 'cameriere', ['camerieri','camerierio'], '', 'SCEGLI IL MASCHILE'),
+              Q('SPOSA ➜ ?', 'sposo', ['sposi','sposa'], '', 'SCEGLI IL MASCHILE'),
+              Q('BAMBINA ➜ ?', 'bambino', ['bambini','bambina'], '', 'SCEGLI IL MASCHILE') ] });
+  }
+  function gCasi(g){
+    var p = frame(g);
+    p.appendChild(el('div', 'intro', '<b>4.</b> ALCUNI NOMI AL FEMMINILE SONO <b>PAROLE DIVERSE</b>! COLLEGA IL MASCHILE AL SUO FEMMINILE.'));
+    var host = el('div'); p.appendChild(host);
+    var data = [ ['marito','moglie'], ['uomo','donna'], ['gallo','gallina'], ['fratello','sorella'], ['re','regina'], ['bue','mucca'] ];
+    pairGame(host, shuffle(data).map(function(d){ return { id:d[0], left:d[0], right:d[1] }; }), [], function(){ reward(p, g, 'AVETE TROVATO TUTTE LE COPPIE DI NOMI DIVERSI.'); });
+  }
+  function gFemm(g){
+    quizRounds(g, {
+      intro:'<b>5.</b> SCRIVI AL <b>FEMMINILE</b>: ATTENZIONE, NON SI CAMBIA SEMPRE ALLO STESSO MODO!',
+      ok:'AVETE TRASFORMATO TUTTI I NOMI AL FEMMINILE.',
+      items:[ Q('STUDENTE ➜ ?', 'studentessa', ['studenta','studentina'], 'SI AGGIUNGE -ESSA.'),
+              Q('DOTTORE ➜ ?', 'dottoressa', ['dottoresse','dottorina'], 'DOTTORE ➜ DOTTORESSA.'),
+              Q('ARCHEOLOGO ➜ ?', 'archeologa', ['archeologessa','archeologia'], 'CAMBIA -O IN -A.'),
+              Q('PITTORE ➜ ?', 'pittrice', ['pittora','pittoressa'], '-TORE ➜ -TRICE.'),
+              Q('ATTORE ➜ ?', 'attrice', ['attora','attoressa'], '-TORE ➜ -TRICE.'),
+              Q('POETA ➜ ?', 'poetessa', ['poetina','poetaccia'], 'SI AGGIUNGE -ESSA.') ] });
+  }
+  function gMasc(g){
+    quizRounds(g, {
+      intro:'<b>6.</b> ORA AL CONTRARIO: SCRIVI AL <b>MASCHILE</b>.',
+      ok:'AVETE TRASFORMATO TUTTI I NOMI AL MASCHILE.',
+      items:[ Q('CAMERIERA ➜ ?', 'cameriere', ['camerieri','camerierio'], ''),
+              Q('CONTESSA ➜ ?', 'conte', ['contesso','conto'], ''),
+              Q('SARTA ➜ ?', 'sarto', ['sarte','sarti'], ''),
+              Q('CUGINA ➜ ?', 'cugino', ['cugine','cugini'], ''),
+              Q('ISTRUTTRICE ➜ ?', 'istruttore', ['istruttoro','istruttora'], ''),
+              Q('BALLERINA ➜ ?', 'ballerino', ['ballerine','ballerini'], '') ] });
+  }
+
+  /* ================== LIVELLO 4: PLURALI DA ATTENZIONE ================== */
+  function gPlurali(g){
+    quizRounds(g, {
+      intro:'<b>6.</b> ATTENZIONE ALLA FINE DEL NOME! SCEGLI IL <b>PLURALE</b> GIUSTO.',
+      ok:'AVETE SCRITTO TUTTI I PLURALI SENZA ERRORI.',
+      items:[ Q('IL LIBRO ➜ I …', 'libri', ['libre','libra'], ''),
+              Q('LA GIOSTRA ➜ LE …', 'giostre', ['giostri','giostra'], ''),
+              Q('IL FUNGO ➜ I …', 'funghi', ['funghe','fungie'], 'CON LA <b>H</b> PER TENERE IL SUONO DURO.'),
+              Q('IL MAGO ➜ I …', 'maghi', ['maghe','magii'], 'CON LA <b>H</b>.'),
+              Q('LA SPIAGGIA ➜ LE …', 'spiagge', ['spiaggie','spiaggi'], ''),
+              Q('L’ARCO ➜ GLI …', 'archi', ['arci','arche'], 'CON LA <b>H</b>.'),
+              Q('L’AMICA ➜ LE …', 'amiche', ['amice','amichi'], 'CON LA <b>H</b>.'),
+              Q('IL RISTORANTE ➜ I …', 'ristoranti', ['ristorante','ristorantei'], ''),
+              Q('LA PENNA ➜ LE …', 'penne', ['penni','pene'], '') ] });
+  }
+
+  /* ================== LIVELLO 5: CONCRETI E ASTRATTI ================== */
+  function gSortCA(g){
+    sortGame(g, {
+      intro:'<b>1.</b> <b>IN COPPIA:</b> TRASCINATE OGNI NOME NELLA COLONNA GIUSTA: CONCRETO O ASTRATTO. OPPURE TOCCATE IL NOME E POI LA COLONNA.',
+      hint:'💡 POSSO <b>VEDERLO E TOCCARLO</b>? ➜ CONCRETO. LO <b>PENSO O LO SENTO</b>? ➜ ASTRATTO.',
+      items:[ {w:'montagna',t:'c'},{w:'macchina',t:'c'},{w:'castoro',t:'c'},{w:'quadro',t:'c'},{w:'luna',t:'c'},{w:'nave',t:'c'},
+              {w:'amicizia',t:'a'},{w:'tristezza',t:'a'},{w:'delusione',t:'a'},{w:'allegria',t:'a'},{w:'coraggio',t:'a'},{w:'gelosia',t:'a'} ],
+      bins:[ {t:'c',title:'CONCRETO',sub:'LO VEDO, LO TOCCO',color:'#6AB77D'}, {t:'a',title:'ASTRATTO',sub:'LO PENSO, LO SENTO',color:'#E01760'} ],
+      wrong:function(w){ return 'PENSATECI: SI PUÒ TOCCARE “' + U(w) + '”?'; },
+      ok:'AVETE SMISTATO TUTTI I NOMI CONCRETI E ASTRATTI.' });
+  }
+  function gEmozioni(g){
+    listGame(g, {
+      intro:'<b>2.</b> <b>TOCCA A VOI!</b> SCRIVETE NOMI ASTRATTI: <b>ALMENO 3</b> PER OGNI GRUPPO. SE LA PAROLA NON È NELL’ELENCO, DECIDE LA MAESTRA (✔ O ✕).',
+      hint:'💡 PENSA A CIÒ CHE PROVI TU, OGNI GIORNO!',
+      groups:[ { title:'😊 NOMI DI EMOZIONI', color:'var(--rosa)', need:3,
+                 accept:['gioia','paura','rabbia','tristezza','felicità','allegria','gelosia','sorpresa','vergogna','noia','delusione','ansia','amore','serenità','entusiasmo','tenerezza','nostalgia','speranza'] },
+               { title:'⭐ NOMI DI QUALITÀ', color:'var(--turchese)', need:3,
+                 accept:['coraggio','bontà','simpatia','pigrizia','onestà','generosità','gentilezza','timidezza','pazienza','bellezza','intelligenza','curiosità','fantasia','altruismo','sincerità','forza'] } ],
+      ok:'AVETE SCRITTO TANTI NOMI ASTRATTI!' });
+  }
+  function gPickAstratti(g){
+    var a = ['felicità','paura','libertà','pazienza','bontà','curiosità','fantasia','onestà'], c = ['zaino','nuvola','cane','finestra','mela','pallone','bicicletta','ponte'];
+    pickGame(g, {
+      intro:'<b>3.</b> TOCCA <b>SOLO I NOMI ASTRATTI</b>. SE SBAGLI, LA PAROLA TORNA INDIETRO.',
+      hint:'💡 I NOMI ASTRATTI NON SI POSSONO TOCCARE.',
+      words:a.map(function(w){ return { w:w, ok:true }; }).concat(c.map(function(w){ return { w:w, ok:false }; })),
+      wrong:'QUESTO SI PUÒ TOCCARE: È UN NOME CONCRETO!',
+      ok:'AVETE TROVATO TUTTI GLI 8 NOMI ASTRATTI.' });
+  }
+  function gFrasiAstratti(g){
+    sentenceGame(g, { n:4, words:['amicizia','coraggio','felicità','paura','fantasia','gelosia','tristezza','allegria'],
+      intro:'<b>4.</b> SCEGLI <b>QUATTRO NOMI ASTRATTI DIVERSI</b> E SCRIVI UNA FRASE PER OGNUNO. LA FRASE DEVE CONTENERE LA PAROLA.',
+      ok:'AVETE SCRITTO QUATTRO FRASI CON I NOMI ASTRATTI.' });
+  }
+
+  /* ================== LIVELLO 6: PRIMITIVI E DERIVATI ================== */
+  function gFamiglie(g){
+    var p = frame(g);
+    p.appendChild(el('div', 'intro', '<b>1.</b> COLLEGA OGNI <b>DERIVATO</b> AL SUO <b>PRIMITIVO</b>. OGNI PRIMITIVO HA DUE DERIVATI!'));
+    var host = el('div'); p.appendChild(host);
+    var fam = { porta:['portiere','portinaio'], libro:['libreria','libraio'], dente:['dentiera','dentista'], pane:['paniere','panettiere'], orto:['ortolano','ortaggio'] };
+    var pairs = []; Object.keys(fam).forEach(function(k){ fam[k].forEach(function(d){ pairs.push({ id:k, left:d, right:k }); }); });
+    pairGame(host, shuffle(pairs), [], function(){ reward(p, g, 'AVETE RICOSTRUITO TUTTE LE FAMIGLIE DI PAROLE.'); });
+  }
+  function gDerivato(g){
+    quizRounds(g, {
+      intro:'<b>2.</b> TROVA IL NOME <b>DERIVATO</b> DAL PRIMITIVO.',
+      ok:'AVETE TROVATO TUTTI I DERIVATI.',
+      items:[ Q('CAMPANA ➜ ?', 'campanile', ['campagna','campione'], '', 'QUALE NOME DERIVA DA CAMPANA?'),
+              Q('VETRO ➜ ?', 'vetreria', ['vetta','ventre'], '', 'QUALE NOME DERIVA DA VETRO?'),
+              Q('GOMMA ➜ ?', 'gommone', ['gonna','gondola'], '', 'QUALE NOME DERIVA DA GOMMA?'),
+              Q('MANO ➜ ?', 'manopola', ['manzo','mantello'], '', 'QUALE NOME DERIVA DA MANO?') ] });
+  }
+  function gPrimitivo(g){
+    quizRounds(g, {
+      intro:'<b>3.</b> ORA AL CONTRARIO: TROVA IL NOME <b>PRIMITIVO</b> DA CUI DERIVA.',
+      ok:'AVETE TROVATO TUTTI I PRIMITIVI.',
+      items:[ Q('POLLAIO ➜ ?', 'pollo', ['polpo','poltrona'], '', 'DA QUALE PRIMITIVO DERIVA?'),
+              Q('BAGNINO ➜ ?', 'bagno', ['banco','bacino'], '', 'DA QUALE PRIMITIVO DERIVA?'),
+              Q('FIORAIO ➜ ?', 'fiore', ['fiocco','fiume'], '', 'DA QUALE PRIMITIVO DERIVA?'),
+              Q('LATTERIA ➜ ?', 'latte', ['lattuga','latta'], '', 'DA QUALE PRIMITIVO DERIVA?') ] });
+  }
+  function gIntrusiDeriv(g){
+    function I(base, fam, intruso){ return Q('QUALE NON È DELLA FAMIGLIA DI «' + base.toUpperCase() + '»?', intruso, fam, 'L’INTRUSO NON DERIVA DA ' + base.toUpperCase() + '.'); }
+    quizRounds(g, {
+      intro:'<b>4.</b> IN OGNI GRUPPO C’È <b>UN INTRUSO</b>: UNA PAROLA CHE SOMIGLIA, MA NON DERIVA DAL PRIMITIVO.',
+      ok:'AVETE SMASCHERATO TUTTI GLI INTRUSI.',
+      items:[ I('fiore', ['fioraio','fiorista','fioritura'], 'fiocco'),
+              I('casa', ['casetta','casolare','casalingo'], 'castagna'),
+              I('pelle', ['pellame','pelleria','pellaccia'], 'pellicano'),
+              I('carro', ['carretto','carrozza','carrello'], 'caramella'),
+              I('libro', ['libreria','libraio','libretto'], 'libertà'),
+              I('vetro', ['vetraio','vetrata','vetreria'], 'verità') ] });
+  }
+
+  /* ================== LIVELLO 7: ALTERATI ================== */
+  function gCani(g){
+    quizRounds(g, {
+      intro:'<b>1.</b> LEGGI LA DEFINIZIONE E SCEGLI IL NOME <b>ALTERATO</b> DI CANE.',
+      ok:'AVETE RICONOSCIUTO I QUATTRO ALTERATI DI CANE.',
+      items:[ Q('CANE ➜ ?', 'cagnolino', ['cagnone','cagnaccio'], 'È UN <b>DIMINUTIVO</b>: PICCOLO.', 'DIMINUTIVO: PICCOLO'),
+              Q('CANE ➜ ?', 'cagnone', ['cagnolino','cagnetto'], 'È UN <b>ACCRESCITIVO</b>: GRANDE.', 'ACCRESCITIVO: GRANDE'),
+              Q('CANE ➜ ?', 'cagnetto', ['cagnone','cagnaccio'], 'È UN <b>VEZZEGGIATIVO</b>: CARINO.', 'VEZZEGGIATIVO: CARINO'),
+              Q('CANE ➜ ?', 'cagnaccio', ['cagnolino','cagnetto'], 'È UN <b>DISPREGIATIVO</b>: BRUTTO.', 'DISPREGIATIVO: BRUTTO') ] });
+  }
+  function gDefAlterati(g){
+    quizRounds(g, {
+      intro:'<b>2.</b> COMPLETA LA DEFINIZIONE CON IL NOME ALTERATO GIUSTO.',
+      ok:'AVETE COMPLETATO TUTTE LE DEFINIZIONI.',
+      items:[ Q('UNA PORTA PICCOLA È UNA …', 'porticina', ['portona','portaccia'], ''),
+              Q('UNA CASA GRANDE È UN …', 'casone', ['casetta','casaccia'], ''),
+              Q('UN GATTO PICCOLO È UN …', 'gattino', ['gattone','gattaccio'], ''),
+              Q('UNA SCARPA BRUTTA È UNA …', 'scarpaccia', ['scarpetta','scarpona'], ''),
+              Q('UNA GIORNATA BRUTTA È UNA …', 'giornataccia', ['giornatina','giornatona'], ''),
+              Q('UN RAMO PICCOLO È UN …', 'ramoscello', ['ramone','ramaccio'], '') ] });
+  }
+  function gAlteratoGiusto(g){
+    quizRounds(g, {
+      intro:'<b>3.</b> QUALE NOME ALTERATO È QUELLO GIUSTO?',
+      ok:'AVETE SCELTO TUTTI GLI ALTERATI GIUSTI.',
+      items:[ Q('UN LIBRO BRUTTO È UN …', 'libraccio', ['libretto','librone'], ''),
+              Q('UNA BAMBOLA PICCOLA E GRAZIOSA È UNA …', 'bambolina', ['bambolona','bambolaccia'], ''),
+              Q('UNA SCARPA PICCOLA E CARINA È UNA …', 'scarpetta', ['scarpona','scarpaccia'], ''),
+              Q('UN GATTO GRANDE È UN …', 'gattone', ['gattino','gattaccio'], '') ] });
+  }
+  function gAlteratiTrasf(g){
+    function S(w, a){ return Q(w.toUpperCase() + ' È …', a, ['piccolo','grande','brutto'].filter(function(x){ return x !== a; }), '', 'COM’È LA COSA INDICATA DAL NOME ALTERATO?'); }
+    quizRounds(g, {
+      intro:'<b>4.</b> DAL NOME ALTERATO AL SIGNIFICATO: COM’È LA COSA?',
+      ok:'AVETE CAPITO IL SIGNIFICATO DI TUTTI GLI ALTERATI.',
+      items:[ S('alberello', 'piccolo'), S('bottigliaccia', 'brutto'), S('tavolino', 'piccolo'), S('cagnone', 'grande'), S('scarpetta', 'piccolo'), S('zainetto', 'piccolo') ] });
+  }
+
+  /* ================== LIVELLO 8: COMPOSTI ================== */
+  function gUnisci(g){
+    quizRounds(g, {
+      intro:'<b>1.</b> UNISCI LE DUE PAROLE E SCEGLI IL NOME <b>COMPOSTO</b> GIUSTO.',
+      ok:'AVETE FORMATO TUTTI I NOMI COMPOSTI.',
+      items:[ Q('CASSA + PANCA = ?', 'cassapanca', ['pancacassa','cassepanche'], ''),
+              Q('MEZZO + GIORNO = ?', 'mezzogiorno', ['giornomezzo','mezzigiorni'], ''),
+              Q('APPENDI + ABITI = ?', 'appendiabiti', ['abitiappendi','appendiabito'], ''),
+              Q('PASSA + TEMPO = ?', 'passatempo', ['tempopassa','passatempi'], ''),
+              Q('PESCE + CANE = ?', 'pescecane', ['canepesce','pescicane'], '') ] });
+  }
+  function gScomponi(g){
+    quizRounds(g, {
+      intro:'<b>2.</b> SCOMPONI IL NOME COMPOSTO: QUAL È LA <b>SECONDA PAROLA</b>?',
+      ok:'AVETE SCOMPOSTO TUTTI I NOMI COMPOSTI.',
+      items:[ Q('ASCIUGACAPELLI = ASCIUGA + ?', 'capelli', ['capello','cappelli'], ''),
+              Q('PIANOFORTE = PIANO + ?', 'forte', ['fortezza','fortuna'], ''),
+              Q('LAVASTOVIGLIE = LAVA + ?', 'stoviglie', ['stoviglia','stovigli'], ''),
+              Q('SALVAGENTE = SALVA + ?', 'gente', ['genti','gentile'], ''),
+              Q('TAGLIAERBA = TAGLIA + ?', 'erba', ['erbe','erbaccia'], '') ] });
+  }
+  function gComposti(g){
+    var p = frame(g);
+    p.appendChild(el('div', 'intro', '<b>3.</b> COLLEGA LA <b>PRIMA PAROLA</b> CON LA <b>SECONDA</b> PER FORMARE UN NOME COMPOSTO. POI LEGGETELO INSIEME!'));
+    var host = el('div'); p.appendChild(host);
+    var data = [ ['auto','bus'], ['capo','fila'], ['cava','tappi'], ['gratta','cielo'], ['aspira','polvere'], ['spremi','agrumi'], ['lava','piatti'], ['moto','sega'], ['porta','chiavi'], ['spazza','neve'] ];
+    pairGame(host, shuffle(data).map(function(d){ return { id:d[0], left:d[0], right:d[1] }; }), [], function(){ reward(p, g, 'AVETE FORMATO DIECI NOMI COMPOSTI.'); });
+  }
+  function gAltriComposti(g){
+    listGame(g, {
+      intro:'<b>4.</b> <b>TOCCA A VOI!</b> SCRIVETE <b>3 NOMI COMPOSTI</b>. SE LA PAROLA NON È NELL’ELENCO, DECIDE LA MAESTRA (✔ O ✕).',
+      hint:'💡 PENSA A CASA, ALLA SCUOLA, ALLA CUCINA…',
+      groups:[ { title:'🧱 I MIEI NOMI COMPOSTI', color:'var(--arancio)', need:3,
+                 accept:['cavatappi','paracadute','portafoglio','lavatrice','lavastoviglie','portaombrelli','apriscatole','tagliaerba','grattacielo','portapenne','girasole','pescespada','capostazione','schiaccianoci','lavagna','spazzolino','fermacarte','temperamatite','cassaforte','arcobaleno','pomodoro','pianoforte','sottomarino','lungomare','portachiavi','sciacquone','battiscopa','dopocena','capolavoro','autostrada'] } ],
+      ok:'AVETE TROVATO TANTI NOMI COMPOSTI!' });
+  }
+
+  /* ================== LIVELLO 9: COLLETTIVI ================== */
+  function gInsiemeDi(g){
+    quizRounds(g, {
+      intro:'<b>1.</b> SCEGLI IL NOME <b>COLLETTIVO</b> GIUSTO PER OGNI INSIEME.',
+      ok:'AVETE ABBINATO TUTTI GLI INSIEMI AL LORO NOME COLLETTIVO.',
+      items:[ Q('UN INSIEME DI UCCELLI È UNO …', 'stormo', ['gregge','sciame'], ''),
+              Q('UN INSIEME DI PECORE È UN …', 'gregge', ['stormo','sciame'], ''),
+              Q('UN INSIEME DI API È UNO …', 'sciame', ['stormo','gregge'], ''),
+              Q('UN INSIEME DI ALBERI DA FRUTTO È UN …', 'frutteto', ['orto','prato'], '') ] });
+  }
+  function gDefColl(g){
+    quizRounds(g, {
+      intro:'<b>2.</b> COMPLETA LA DEFINIZIONE: CHE COSA INDICA IL NOME COLLETTIVO?',
+      ok:'AVETE COMPLETATO TUTTE LE DEFINIZIONI.',
+      items:[ Q('ESERCITO = INSIEME DI …', 'soldati', ['cavalli','navi'], ''),
+              Q('ULIVETO = INSIEME DI …', 'ulivi', ['olive','pini'], ''),
+              Q('FAUNA = INSIEME DI …', 'animali', ['piante','sassi'], ''),
+              Q('COSTELLAZIONE = INSIEME DI …', 'stelle', ['pianeti','nuvole'], ''),
+              Q('ORCHESTRA = INSIEME DI …', 'musicisti', ['cantanti','attori'], '') ] });
+  }
+  function gTrovaColl(g){
+    quizRounds(g, {
+      intro:'<b>3.</b> COMPLETA OGNI FRASE CON IL NOME <b>COLLETTIVO</b> GIUSTO.',
+      ok:'AVETE TROVATO TUTTI I NOMI COLLETTIVI.',
+      items:[ Q('IL VENTO MUOVE IL … DEGLI ALBERI.', 'fogliame', ['gregge','foglio'], ''),
+              Q('IN COLLINA C’È UN … DI UVA.', 'vigneto', ['frutteto','vignetta'], ''),
+              Q('UNA … DI PERSONE ASPETTA IL CONCERTO.', 'folla', ['stormo','foglia'], ''),
+              Q('NEL CIELO VOLA UNO … DI RONDINI.', 'stormo', ['sciame','gregge'], '') ] });
+  }
+
+  /* ================== LIVELLO 10: ORA IL MAESTRO SEI TU ================== */
+  function gTreSpecifici(g){
+    listGame(g, {
+      intro:'<b>1.</b> PER OGNI NOME <b>GENERICO</b> SCRIVETE <b>3 NOMI SPECIFICI</b>. SE LA PAROLA NON È NELL’ELENCO, DECIDE LA MAESTRA (✔ O ✕).',
+      hint:'💡 GENERICO = IL GRUPPO. SPECIFICI = GLI ELEMENTI DEL GRUPPO.',
+      groups:[ { title:'👕 VESTITI', color:'var(--arancio)', need:3, accept:['maglia','pantaloni','gonna','giacca','cappotto','calze','camicia','maglione','vestito','sciarpa','cappello','scarpe','felpa','jeans','guanti','pigiama','pantalone','calza','scarpa','guanto','calzini','calzino'] },
+               { title:'🥕 VERDURA', color:'var(--verde)', need:3, accept:['carota','pomodoro','zucchina','insalata','spinaci','patata','cipolla','melanzana','peperone','broccolo','lattuga','cavolo','fagiolini','piselli','zucca','sedano','finocchio','carote','pomodori','zucchine','patate','cipolle'] },
+               { title:'⚽ SPORT', color:'var(--turchese)', need:3, accept:['calcio','nuoto','tennis','pallavolo','basket','judo','ginnastica','atletica','ciclismo','sci','rugby','danza','pallanuoto','equitazione','scherma','karate','pallacanestro','pattinaggio'] },
+               { title:'✏️ CANCELLERIA', color:'var(--rosa)', need:3, accept:['matita','penna','gomma','righello','quaderno','astuccio','pennarello','colla','forbici','temperino','zaino','diario','evidenziatore','matite','penne','pennarelli','quaderni'] } ],
+      ok:'AVETE SCRITTO TANTI NOMI SPECIFICI PER OGNI GRUPPO!' });
+  }
+  function gMaiuscole(g){
+    var pr = ['elena','cenerentola','torino','natale','edoardo','artù','italia','giovanni','francia','adriatico'], co = ['astuccio','matita','quaderno','gomma','pennarello','colla','righello','zaino'];
+    pickGame(g, {
+      intro:'<b>2.</b> QUESTE PAROLE SONO SCRITTE TUTTE CON LA MINUSCOLA. TOCCA QUELLE CHE VANNO SCRITTE <b>CON LA MAIUSCOLA</b>.',
+      hint:'💡 I NOMI PROPRI DI PERSONE, PERSONAGGI, CITTÀ, STATI, MARI E FESTIVITÀ SI SCRIVONO CON LA MAIUSCOLA.',
+      words:pr.map(function(w){ return { w:w, ok:true }; }).concat(co.map(function(w){ return { w:w, ok:false }; })),
+      wrong:'È UN NOME COMUNE: SI SCRIVE CON LA MINUSCOLA!',
+      ok:'AVETE TROVATO TUTTI I 10 NOMI PROPRI: ELENA, CENERENTOLA, TORINO, NATALE, EDOARDO, ARTÙ, ITALIA, GIOVANNI, FRANCIA, ADRIATICO.' });
+  }
+  function gTabella(g){
+    gridGame(g, {
+      intro:'<b>3.</b> PER OGNI NOME CON L’ARTICOLO SCEGLI IL <b>GENERE</b> (MASCHILE O FEMMINILE) E IL <b>NUMERO</b> (SINGOLARE O PLURALE). POI TOCCA CONTROLLA.',
+      rows:[ { ph:'una dottoressa', g:'f', n:'s' }, { ph:'le formiche', g:'f', n:'p' }, { ph:'un camion', g:'m', n:'s' }, { ph:'l’alunno', g:'m', n:'s' },
+             { ph:'i quaderni', g:'m', n:'p' }, { ph:'una mela', g:'f', n:'s' }, { ph:'i pennarelli', g:'m', n:'p' } ],
+      ok:'AVETE COMPLETATO LA TABELLA DEI NOMI. ORA IL MAESTRO SIETE VOI!' });
+  }
+
+  /* ================== FINALE ================== */
+  function renderFinish(){
+    confetti();
+    var p = el('div', 'panel finish-wrap');
+    p.innerHTML = '<div style="font-size:clamp(64px,12vw,110px);line-height:1">🏆</div><div class="finish-title">CAMPIONI DEI NOMI!</div><div class="finish-sub">HAI COMPLETATO TUTTI I 10 LIVELLI</div>';
+    var row = starsRow(); row.style.justifyContent = 'center'; p.appendChild(row);
+    var a = el('div', 'actions'); a.style.justifyContent = 'center';
+    var h = el('button', 'btn rosa', 'TORNA ALLA HOME'); h.addEventListener('click', function(){ go('home'); });
+    a.appendChild(h); p.appendChild(a); stage.appendChild(p);
+  }
+
+  /* ================== MODALI ================== */
+  function openModal(id){ $(id).classList.add('open'); }
+  function closeModal(id){ $(id).classList.remove('open'); }
+  function openConfirm(){ closeModal('helpModal'); closeModal('teacherModal'); openModal('confirmModal'); }
+  $('helpBtn').addEventListener('click', function(){ openModal('helpModal'); });
+  $('helpClose').addEventListener('click', function(){ closeModal('helpModal'); });
+  $('schemiBtn').addEventListener('click', function(){ go('schemes'); });
+  $('resetBtn').addEventListener('click', openConfirm);
+  function updSeq(){ $('unlockBtn').innerHTML = state.sequential ? '&#128275; APRI TUTTI I LIVELLI (SBLOCCA)' : '&#128274; RIMETTI IL BLOCCO (UN LIVELLO ALLA VOLTA)'; }
+  $('unlockBtn').addEventListener('click', function(){ state.sequential = !state.sequential; save(); updSeq(); closeModal('helpModal'); closeModal('teacherModal'); go('home'); toast(state.sequential ? 'ORA I LIVELLI SI APRONO UNO ALLA VOLTA' : 'TUTTI I LIVELLI SONO APERTI'); });
+  $('confNo').addEventListener('click', function(){ closeModal('confirmModal'); });
+  $('confYes').addEventListener('click', function(){ state = { done:{}, seen:{}, sequential:true }; save(); closeModal('confirmModal'); closeModal('teacherModal'); updSeq(); go('home'); toast('SI RICOMINCIA!'); });
+  ['helpModal','confirmModal','teacherModal'].forEach(function(id){ $(id).addEventListener('click', function(e){ if(e.target === $(id)) closeModal(id); }); });
+  document.addEventListener('keydown', function(e){ if(e.key === 'Escape'){ closeModal('helpModal'); closeModal('confirmModal'); closeModal('teacherModal'); } });
+  function tShow(open){ $('tLock').style.display = open ? 'none' : ''; $('tOpen').style.display = open ? 'flex' : 'none'; }
+  $('teacherBtn').addEventListener('click', function(){ closeModal('helpModal'); tShow(false); $('tCode').value = ''; $('tErr').textContent = ''; openModal('teacherModal'); setTimeout(function(){ try{ $('tCode').focus(); }catch(e){} }, 60); });
+  $('teacherClose').addEventListener('click', function(){ closeModal('teacherModal'); });
+  function tTry(){ if($('tCode').value.trim().toLowerCase() === 'maestra'){ tShow(true); } else { $('tErr').textContent = 'CODICE ERRATO'; } }
+  $('tGo').addEventListener('click', tTry); $('tCode').addEventListener('keydown', function(e){ if(e.key === 'Enter'){ e.preventDefault(); tTry(); } });
+  $('fsBtn').addEventListener('click', function(){
+    try{
+      var d = document, r = d.documentElement;
+      if(!d.fullscreenElement && !d.webkitFullscreenElement){ (r.requestFullscreen || r.webkitRequestFullscreen).call(r); }
+      else { (d.exitFullscreen || d.webkitExitFullscreen).call(d); }
+    }catch(e){}
+  });
+
+  load(); updSeq(); go('home');
+})();
+</script>
+</body>
+</html>
+
+</body></html>
